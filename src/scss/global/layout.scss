@@ -1,0 +1,11 @@
+@use "../utils/" as *;
+
+.content {
+  margin: 10px auto;
+  overflow-x: hidden;
+  width: 90%;
+  height: 500px;
+  padding: 20px;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #d2bebc 0%, #edf1e9 100%);
+}

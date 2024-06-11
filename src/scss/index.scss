@@ -1,0 +1,29 @@
+@use "global";
+@use "styles";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: white;
+}
+
+:root {
+  //DARK MODE
+  --background: #cf2424;
+  --gold: #f1d60e;
+  --white: #fff;
+  --black: #000;
+  --nav: #323232;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #919191;
+    --gold: #ffe100;
+    --white: #000;
+    --black: #444;
+    --nav: #646363;
+  }
+}

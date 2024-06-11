@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+
+:root {
+  --bebas: "Bebas Neue", sans-serif;
+  --luxurious: "Luxurious Script", cursive;
+  --dosis: "Dosis", sans-serif;
+}
+
+body {
+  font-family: var(--dosis);
+}
+
+// h1 {
+//   font-family: var(--bebas);
+// }
+
+// h2 {
+//   font-family: var(--luxurious);
+// }
