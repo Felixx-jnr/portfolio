@@ -33,9 +33,9 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg ">
+    <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg">
       <nav className="">
-        <div className=" mx-auto flex justify-between items-center w-[92%]">
+        <div className=" mx-auto flex justify-between items-center w-[92%] bg-red-400/50 px-3 py-1 rounded-full">
           <div>
             <a
               href="#"
@@ -50,7 +50,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="text-white hover:text-gray-300"
+                  className=" "
                 >
                   Home
                 </a>
@@ -58,7 +58,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="text-white hover:text-gray-300"
+                  className=""
                 >
                   About
                 </a>
@@ -66,7 +66,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="text-white hover:text-gray-300"
+                  className=""
                 >
                   Services
                 </a>
@@ -74,7 +74,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="text-white hover:text-gray-300"
+                  className=""
                 >
                   Contact
                 </a>
@@ -102,10 +102,10 @@ const Navbar = () => {
           <div className="block md:hidden">
             {/* Hamburger menu for mobile */}
             <button
-              className="text-white text-3xl bars-button"
+              className="text-white text-3xl bars-button flex"
               onClick={toggleMenu}
             >
-              {isMenuOpen ? <FaTimes /> : <FaBars />}
+              {isMenuOpen ? "" : <FaBars />}
             </button>
           </div>
         </div>
@@ -117,16 +117,16 @@ const Navbar = () => {
               onClick={toggleMenu}
             ></div>
             <div
-              className="fixed flex flex-col justify-center items-center bg-gray-800 md:hidden z-50 -top-5 h-screen w-screen"
+              className="fixed flex flex-col justify-center items-center bg-white/80 md:hidden z-50 -top-5 h-screen w-screen "
               ref={dropdownRef}
             >
-              <FaTimes className="absolute top-5 right-5 text-3xl " />
+              <FaTimes className="absolute top-5 right-8 text-3xl " />
 
-              <ul className="flex flex-col mt-3 space-y-5 text-2xl items-center">
+              <ul className="flex flex-col mt-3 space-y-5 text-2xl items-center text-black">
                 <li>
                   <a
                     href="#"
-                    className="text-white hover:text-gray-300"
+                    className=" hover:text-gray-300"
                   >
                     Home
                   </a>
@@ -135,7 +135,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white hover:text-gray-300"
+                    className=" hover:text-gray-300"
                   >
                     About
                   </a>
@@ -144,7 +144,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white hover:text-gray-300"
+                    className=" hover:text-gray-300"
                   >
                     Services
                   </a>
@@ -153,7 +153,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-white hover:text-gray-300"
+                    className=" hover:text-gray-300"
                   >
                     Contact
                   </a>
