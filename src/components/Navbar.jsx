@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg">
-      <nav className="">
+      <nav>
         <div className=" mx-auto flex justify-between items-center w-[92%] bg-red-400/50 px-3 py-1 rounded-full">
           <div>
             <a
@@ -109,6 +109,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
         {/* Mobile menu with overlay */}
         {isMenuOpen && (
           <>
