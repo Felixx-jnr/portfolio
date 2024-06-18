@@ -10,10 +10,17 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [animateClass, setAnimateClass] = useState("");
   const dropdownRef = useRef(null);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    if (isMenuOpen) {
+      setAnimateClass("slide-out");
+      setTimeout(() => setIsMenuOpen(false), 300);
+    } else {
+      setIsMenuOpen(true);
+      setAnimateClass("slide-in");
+    }
   };
 
   useEffect(() => {
@@ -23,7 +30,8 @@ const Navbar = () => {
         dropdownRef.current &&
         dropdownRef.current.contains(e.target)
       ) {
-        setIsMenuOpen(false);
+        setAnimateClass("slide-out");
+        setTimeout(() => setIsMenuOpen(false), 300);
       }
     };
 
@@ -33,57 +41,31 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg">
+    <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg z-50">
       <nav>
-        <div className=" mx-auto flex justify-between items-center w-[92%] bg-red-400/50 px-3 py-1 rounded-full">
+        <div className="mx-auto flex justify-between items-center w-[80%] bg-white/50 px-3 rounded-full backdrop-blur-lg border-2 border-white">
           <div>
             <a
               href="#"
-              className="text-white font-bold text-3xl"
+              className="font-bold text-3xl"
             >
               FELIX UDOH
             </a>
           </div>
 
           <div className="hidden md:block">
-            <ul className="flex space-x-4 text-2xl">
+            <ul className="flex space-x-4 text-xl font-semibold">
               <li>
-                <a
-                  href="#"
-                  className=" "
-                >
-                  Home
-                </a>
+                <a href="#">Project</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  className=""
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className=""
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className=""
-                >
-                  Contact
-                </a>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div>
 
           <div className="hidden md:block">
-            <ul className="flex space-x-4 text-2xl">
+            <ul className="flex space-x-2 text-xl">
               <li>
                 <FaLinkedin />
               </li>
@@ -102,7 +84,7 @@ const Navbar = () => {
           <div className="block md:hidden">
             {/* Hamburger menu for mobile */}
             <button
-              className="text-white text-3xl bars-button flex"
+              className="text-3xl bars-button flex"
               onClick={toggleMenu}
             >
               {isMenuOpen ? "" : <FaBars />}
@@ -118,43 +100,34 @@ const Navbar = () => {
               onClick={toggleMenu}
             ></div>
             <div
-              className="fixed flex flex-col justify-center items-center bg-white/80 md:hidden z-50 -top-5 h-screen w-screen "
+              className={`absolute bg-sky-100 flex flex-col justify-center items-center -top-2 right-0 md:hidden z-50 h-screen w-screen ${animateClass}`}
               ref={dropdownRef}
             >
-              <FaTimes className="absolute top-5 right-8 text-3xl " />
+              <div className="absolute top-2 flex justify-between items-center w-[80%] bg-white/50 px-3 rounded-xl backdrop-blur-lg border-2 border-white">
+                <div>
+                  <a
+                    href="#"
+                    className="font-bold text-3xl"
+                  >
+                    FELIX UDOH
+                  </a>
+                </div>
+                <FaTimes className="text-3xl" />
+              </div>
 
-              <ul className="flex flex-col mt-3 space-y-5 text-2xl items-center text-black">
+              <ul className="flex flex-col mt-3 space-y-3 items-center text-xl font-semibold text-black ">
                 <li>
                   <a
                     href="#"
-                    className=" hover:text-gray-300"
+                    className="hover:text-gray-300"
                   >
-                    Home
+                    Project
                   </a>
                 </li>
-
                 <li>
                   <a
                     href="#"
-                    className=" hover:text-gray-300"
-                  >
-                    About
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className=" hover:text-gray-300"
-                  >
-                    Services
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className=" hover:text-gray-300"
+                    className="hover:text-gray-300"
                   >
                     Contact
                   </a>
@@ -162,7 +135,7 @@ const Navbar = () => {
               </ul>
 
               <div>
-                <ul className="flex space-x-4 text-2xl justify-center my-4">
+                <ul className="flex space-x-5 justify-center my-4 text-2xl">
                   <li>
                     <FaLinkedin />
                   </li>

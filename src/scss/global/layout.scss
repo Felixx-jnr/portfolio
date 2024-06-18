@@ -1,12 +1,16 @@
 @use "../utils/" as *;
 
+body {
+  background: var(--mainColor);
+}
+
 .section-one {
   margin: 0px auto;
   overflow-x: hidden;
-  max-width: 98%;
+  max-width: 87%;
   height: 500px;
-  padding: 10px;
+  padding: 4px;
   border-radius: 40px;
-  background: linear-gradient(45deg, #d2bebc 0%, #edf1e9 100%);
+  background: var(--backgroundOne);
   color: black;
 }
