@@ -3,7 +3,7 @@ import pic1 from "../assets/edit1.jpg";
 
 const Home = () => {
   return (
-    <div className=" relative ml-5 top-1/2 -translate-y-1/2">
+    <div className=" relative mx-14 top-1/2 -translate-y-1/2">
       <div>
         <img
           style={{
