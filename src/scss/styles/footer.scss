@@ -1,0 +1,156 @@
+@use "../utils/" as *;
+
+.footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("https://res.cloudinary.com/dyf0wsiaf/image/upload/v1713026910/jwfloi1ey2ijinbgakpj.webp");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include breakpoint-down(medium) {
+    background-size: 50%;
+  }
+
+  @include breakpoint-down(small) {
+    background-size: 60%;
+  }
+
+  &__overlay {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    background: linear-gradient(
+      to right,
+      #db5f5f 40%,
+      #6bb473 70%,
+      #31255a 100%
+    );
+    opacity: 0.9;
+    -webkit-backdrop-filter: (180deg) blur(10px);
+    backdrop-filter: blur(100px);
+  }
+
+  &__setup {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+
+    @include breakpoint-down("small") {
+      max-width: 95%;
+    }
+
+    @include breakpoint-down(smaller) {
+      grid-template-columns: 0.7fr 1fr 1fr;
+    }
+  }
+
+  &__name {
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__contact {
+    color: #000000;
+    align-self: center;
+  }
+
+  &__links,
+  &__contact {
+    list-style: none;
+    text-align: center;
+    font-size: rem(20);
+
+    @include breakpoint-down("small") {
+      font-size: rem(15);
+    }
+
+    @include breakpoint-down(smaller) {
+      font-size: rem(10);
+    }
+  }
+
+  &__links li,
+  &__contact div {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: rem(10);
+  }
+
+  &__contact .main span {
+    margin: 0 rem(10);
+  }
+
+  &__contact .icon {
+    display: flex;
+    justify-content: center;
+    gap: rem(20);
+    font-size: rem(30);
+    margin: 0;
+
+    @include breakpoint-down("small") {
+      gap: rem(10);
+      font-size: rem(25);
+    }
+
+    @include breakpoint-down(smaller) {
+      font-size: rem(20);
+    }
+  }
+}
+
+.icon a,
+.main a {
+  color: #000000;
+}
+
+h2.footer__name {
+  margin: 0;
+  font-size: rem(30);
+
+  @include breakpoint-down("small") {
+    font-size: 100%;
+    text-align: center;
+  }
+
+  @include breakpoint-down(smaller) {
+    transform: rotate(-90deg);
+    padding: 0;
+    font-size: rem(12);
+  }
+}
+
+.footer__links h2,
+.footer__contact h2 {
+  font-size: rem(30);
+  margin-bottom: rem(10);
+  margin-top: rem(0);
+
+  @include breakpoint-down("small") {
+    font-size: rem(20);
+  }
+
+  @include breakpoint-down(smaller) {
+    font-size: rem(15);
+  }
+}
+
+.footer__links a {
+  color: #969696;
+}
+
+.footer p {
+  padding: rem(10) 0;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  grid-column: 2/3;
+  border-top: #444 1px solid;
+
+  @include breakpoint-down(smaller) {
+    font-size: rem(10);
+  }
+}

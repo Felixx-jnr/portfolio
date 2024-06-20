@@ -10,11 +10,20 @@ import node from "../assets/node.svg";
 import express from "../assets/express.svg";
 import mongo from "../assets/mongodb.svg";
 import tailwind from "../assets/tailwind.svg";
+import Tilt from "react-parallax-tilt";
 
 const MyStacks = () => {
   return (
-    <div className="stacks flex gap-4 section-two">
-      <div className="w-1/2">
+    <div className="stacks flex flex-wrap justify-center gap-4 no-scrollbar">
+      <Tilt
+        glareEnable={true}
+        glareMaxOpacity={0.3}
+        glareColor="#ffffff"
+        glarePosition="all"
+        tiltMaxAngleX={10}
+        tiltMaxAngleY={10}
+        className="w-[48%] bg-green-300"
+      >
         <div className="flex justify-center items-center gap-2 my-3 ">
           <FaCode className=" text-4xl " />
           <h3 className=" text-3xl">Frontend</h3>
@@ -79,9 +88,17 @@ const MyStacks = () => {
             <p className="text-xl">TAILWIND</p>
           </div>
         </div>
-      </div>
+      </Tilt>
 
-      <div className="w-1/2">
+      <Tilt
+        glareEnable={true}
+        glareMaxOpacity={0.3}
+        glareColor="#ffffff"
+        glarePosition="all"
+        tiltMaxAngleX={10}
+        tiltMaxAngleY={10}
+        className="w-[48%] bg-red-300"
+      >
         <div className="flex justify-center items-center gap-2 my-3 ">
           <FaDatabase className=" text-4xl " />
           <h3 className=" text-3xl">Backend</h3>
@@ -119,7 +136,7 @@ const MyStacks = () => {
             <p className="text-xl">MONGODB</p>
           </div>
         </div>
-      </div>
+      </Tilt>
     </div>
   );
 };

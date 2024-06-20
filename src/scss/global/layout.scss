@@ -4,24 +4,23 @@ body {
   background: var(--mainColor);
 }
 
-.section-one {
+.home {
   margin: 0px auto;
-  overflow-x: hidden;
-  max-width: 87%;
+  overflow: hidden;
+  max-width: 90%;
   height: 500px;
   padding: 4px;
-  border-radius: 40px;
-  background: var(--backgroundOne);
+  border-radius: 20px;
+  background: var(--homeBackground);
   color: black;
   margin-bottom: 20px;
 }
 
-.section-two {
+.stacks {
   margin: 0px auto;
-  overflow-x: hidden;
-  max-width: 87%;
-
-  padding: 4px;
-
-  color: white;
+  overflow: hidden;
+  max-width: 90%;
+  background: var(--stacksBackground);
+  color: black;
+  border-radius: 20px;
 }

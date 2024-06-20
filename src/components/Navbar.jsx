@@ -43,18 +43,18 @@ const Navbar = () => {
   return (
     <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg z-50">
       <nav>
-        <div className="mx-auto flex justify-between items-center w-[80%] bg-white/50 px-3 rounded-full backdrop-blur-sm border-2 border-white">
+        <div className="mx-auto flex justify-between items-center w-[80%] h-10 bg-white/50 px-3 rounded-full backdrop-blur-sm border-2 border-white">
           <div>
             <a
               href="#"
-              className="font-bold text-3xl"
+              className="font-bold text-xl sm:text-2xl md:text-3xl"
             >
               FELIX UDOH
             </a>
           </div>
 
           <div className="hidden md:block">
-            <ul className="flex space-x-4 text-xl font-semibold">
+            <ul className="flex space-x-3 lg:space-x-5 text-xl font-semibold">
               <li>
                 <a href="#">Project</a>
               </li>
@@ -65,7 +65,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <ul className="flex space-x-2 text-xl">
+            <ul className="flex space-x-2 lg:space-x-4  text-2xl">
               <li>
                 <FaLinkedin />
               </li>
@@ -84,7 +84,7 @@ const Navbar = () => {
           <div className="block md:hidden">
             {/* Hamburger menu for mobile */}
             <button
-              className="text-3xl bars-button flex"
+              className="font-bold text-xl sm:text-2xl md:text-3xl bars-button flex "
               onClick={toggleMenu}
             >
               {isMenuOpen ? "" : <FaBars />}
@@ -107,15 +107,15 @@ const Navbar = () => {
                 <div>
                   <a
                     href="#"
-                    className="font-bold text-3xl"
+                    className="font-bold text-xl sm:text-2xl md:text-3xl"
                   >
                     FELIX UDOH
                   </a>
                 </div>
-                <FaTimes className="text-3xl" />
+                <FaTimes className="font-bold text-xl sm:text-2xl md:text-3xl" />
               </div>
 
-              <ul className="flex flex-col mt-3 space-y-3 items-center text-xl font-semibold text-black ">
+              <ul className="flex flex-col mt-3 space-y-3 items-center text-xl sm:text-2xl font-semibold text-black ">
                 <li>
                   <a
                     href="#"
@@ -135,7 +135,7 @@ const Navbar = () => {
               </ul>
 
               <div>
-                <ul className="flex space-x-5 justify-center my-4 text-2xl">
+                <ul className="flex space-x-3 sm:space-x-5 justify-center my-4 text-xl sm:text-2xl">
                   <li>
                     <FaLinkedin />
                   </li>
