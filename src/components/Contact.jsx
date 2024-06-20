@@ -47,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact bg-red-300 max-w-[90%] mx-auto rounded-2xl">
       <h1
         id="contact"
         className="contact__header"

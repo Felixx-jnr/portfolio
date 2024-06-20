@@ -3,7 +3,7 @@ import pic1 from "../assets/edit1.jpg";
 
 const Home = () => {
   return (
-    <div className=" relative mx-14 top-1/2 -translate-y-1/2">
+    <div className=" relative mx-2 xs:mx-6 md:mx-20 top-1/2 -translate-y-1/2">
       <div>
         <img
           style={{
@@ -14,11 +14,15 @@ const Home = () => {
           alt=" felix frontend backend fullstack"
         />
 
-        <h2 className="head font-bold text-5xl py-2">
-          Hi! I'm Felix - a Fullstack Developer
+        <h2 className=" lg:hidden max-lg:block font-bold text-2xl xs:text-4xl sm:text-5xl sm:py-2">
+          Hi! I'm Felix <br /> A Fullstack Developer
         </h2>
 
-        <p className=" text-2xl font-semibold py-2">
+        <h2 className="max-lg:hidden font-bold text-5xl py-1 sm:py-2">
+          Hi! I'm Felix - A Fullstack Developer
+        </h2>
+
+        <p className=" xs:text-2xl font-semibold py-2 xs:py-3">
           I build things for the web
         </p>
 

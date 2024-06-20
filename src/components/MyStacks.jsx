@@ -14,7 +14,7 @@ import Tilt from "react-parallax-tilt";
 
 const MyStacks = () => {
   return (
-    <div className="stacks flex flex-wrap justify-center gap-4 no-scrollbar">
+    <div className="stacks flex flex-wrap justify-center gap-4 mx-auto my-0">
       <Tilt
         glareEnable={true}
         glareMaxOpacity={0.3}
@@ -22,70 +22,70 @@ const MyStacks = () => {
         glarePosition="all"
         tiltMaxAngleX={10}
         tiltMaxAngleY={10}
-        className="w-[48%] bg-green-300"
+        className="w-] bg-green-300 p-2 rounded-xl w-[49%]"
       >
-        <div className="flex justify-center items-center gap-2 my-3 ">
-          <FaCode className=" text-4xl " />
-          <h3 className=" text-3xl">Frontend</h3>
+        <div className="flex items-center gap-2 mt-3 ml-3 ">
+          <FaCode className=" text-2xl " />
+          <h3 className=" text-xl font-semibold">Frontend</h3>
         </div>
-        <p className="my-4 text-2xl">
+        <p className="my-2 text-xl leading-6 ml-3">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum at
           vitae laborum aliquam facilis optio obcaecati officia voluptatibus
           deserunt similique!
         </p>
-        <div className="flex justify-between">
-          <div className="flex flex-col items-center">
+        <div className=" flex justify-around">
+          <div className="flex flex-col items-center w-10">
             <img
-              style={{ width: "50%" }}
+              style={{ width: "100%" }}
               src={html}
               alt=""
             />
             <p className="text-xl">HTML</p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-10">
             <img
-              style={{ width: "50%" }}
+              style={{ width: "100%" }}
               src={css}
               alt=""
             />
             <p className="text-xl">CSS</p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-10">
             <img
-              style={{ width: "50%" }}
+              style={{ width: "100%" }}
+              src={tailwind}
+              alt=""
+            />
+            <p className="text-xl">TAILWIND</p>
+          </div>
+
+          <div className="flex flex-col items-center w-10">
+            <img
+              style={{ width: "1000%" }}
               src={js}
               alt=""
             />
             <p className="text-xl">JS</p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-10">
             <img
-              style={{ width: "70%" }}
+              style={{ width: "100%" }}
               src={sass}
               alt=""
             />
             <p className="text-xl">SASS</p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-10">
             <img
-              style={{ width: "60%" }}
+              style={{ width: "100%" }}
               src={react}
               alt=""
             />
             <p className="text-xl">REACT</p>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <img
-              style={{ width: "85%" }}
-              src={tailwind}
-              alt=""
-            />
-            <p className="text-xl">TAILWIND</p>
           </div>
         </div>
       </Tilt>
@@ -97,39 +97,39 @@ const MyStacks = () => {
         glarePosition="all"
         tiltMaxAngleX={10}
         tiltMaxAngleY={10}
-        className="w-[48%] bg-red-300"
+        className="w-[49%] bg-red-300 p-2 rounded-xl"
       >
-        <div className="flex justify-center items-center gap-2 my-3 ">
-          <FaDatabase className=" text-4xl " />
-          <h3 className=" text-3xl">Backend</h3>
+        <div className="flex items-center gap-2 mt-3 ml-3 ">
+          <FaDatabase className=" text-2xl " />
+          <h3 className=" text-xl font-semibold">Backend</h3>
         </div>
-        <p className="my-4 text-2xl">
+        <p className="my-2 text-xl leading-6 ml-3">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum at
           vitae laborum aliquam facilis optio obcaecati officia voluptatibus
           deserunt similique!
         </p>
-        <div className="flex justify-center">
-          <div className="flex flex-col items-center">
+        <div className="flex justify-around">
+          <div className="flex flex-col items-center w-10">
             <img
-              style={{ width: "35%" }}
+              style={{ width: "100%" }}
               src={node}
               alt=""
             />
             <p className="text-xl">NODE</p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-10">
             <img
-              style={{ width: "35%" }}
+              style={{ width: "100%" }}
               src={express}
               alt=""
             />
             <p className="text-xl">EXPRESS</p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-10">
             <img
-              style={{ width: "35%" }}
+              style={{ width: "100%" }}
               src={mongo}
               alt=""
             />

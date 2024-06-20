@@ -18,10 +18,8 @@ body {
 }
 
 .stacks {
-  margin: 0px auto;
-  overflow: hidden;
   max-width: 90%;
   background: var(--stacksBackground);
-  color: black;
   border-radius: 20px;
+  padding: 10px;
 }
