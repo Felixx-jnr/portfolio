@@ -2,11 +2,12 @@
 
 body {
   background: var(--mainColor);
+  overflow-x: hidden;
 }
 
 .home {
   margin: 0px auto;
-  overflow: hidden;
+  overflow-x: hidden;
   max-width: 90%;
   height: 500px;
   padding: 4px;

@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg z-50">
       <nav>
-        <div className="mx-auto flex justify-between items-center w-[80%] h-10 bg-white/50 px-3 rounded-full backdrop-blur-sm border-2 border-white">
+        <div className="mx-auto flex justify-between items-center w-[80%] h-10 bg-white/50 px-3 rounded-xl backdrop-blur-sm border-2 border-white  ">
           <div>
             <a
               href="#"
