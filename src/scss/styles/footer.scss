@@ -51,6 +51,7 @@
   &__name {
     justify-self: center;
     align-self: center;
+    font-weight: 600;
   }
 
   &__contact {
@@ -62,7 +63,7 @@
   &__contact {
     list-style: none;
     text-align: center;
-    font-size: rem(20);
+    font-size: rem(15);
 
     @include breakpoint-down("small") {
       font-size: rem(15);
@@ -76,7 +77,7 @@
   &__links li,
   &__contact div {
     text-align: center;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: rem(10);
   }
 
@@ -88,15 +89,11 @@
     display: flex;
     justify-content: center;
     gap: rem(20);
-    font-size: rem(30);
+    font-size: rem(25);
     margin: 0;
 
     @include breakpoint-down("small") {
       gap: rem(10);
-      font-size: rem(25);
-    }
-
-    @include breakpoint-down(smaller) {
       font-size: rem(20);
     }
   }
@@ -109,23 +106,24 @@
 
 h2.footer__name {
   margin: 0;
-  font-size: rem(30);
+  font-size: rem(28);
 
   @include breakpoint-down("small") {
-    font-size: 100%;
+    font-size: rem(24);
     text-align: center;
   }
 
   @include breakpoint-down(smaller) {
     transform: rotate(-90deg);
     padding: 0;
-    font-size: rem(12);
+    font-size: rem(20);
   }
 }
 
 .footer__links h2,
 .footer__contact h2 {
-  font-size: rem(30);
+  font-weight: 600;
+  font-size: rem(20);
   margin-bottom: rem(10);
   margin-top: rem(0);
 
@@ -136,10 +134,6 @@ h2.footer__name {
   @include breakpoint-down(smaller) {
     font-size: rem(15);
   }
-}
-
-.footer__links a {
-  color: #969696;
 }
 
 .footer p {

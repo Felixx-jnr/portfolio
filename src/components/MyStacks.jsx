@@ -22,7 +22,7 @@ const MyStacks = () => {
         glarePosition="all"
         tiltMaxAngleX={10}
         tiltMaxAngleY={10}
-        className="w-] bg-green-300 p-2 rounded-xl w-[49%]"
+        className="w-] bg-green-300 p-2 rounded-xl md:w-[47%] w-[100%]"
       >
         <div className="flex items-center gap-2 mt-3 ml-3 ">
           <FaCode className=" text-2xl " />
@@ -34,58 +34,58 @@ const MyStacks = () => {
           deserunt similique!
         </p>
         <div className=" flex justify-around">
-          <div className="flex flex-col items-center w-10">
+          <div className="flex flex-col items-center w-8 sm:w-10 ">
             <img
               style={{ width: "100%" }}
               src={html}
               alt=""
             />
-            <p className="text-xl">HTML</p>
+            <p className="sm:text-sm text-xs font-semibold">HTML</p>
           </div>
 
-          <div className="flex flex-col items-center w-10">
+          <div className="flex flex-col items-center w-8 sm:w-10">
             <img
               style={{ width: "100%" }}
               src={css}
               alt=""
             />
-            <p className="text-xl">CSS</p>
+            <p className="sm:text-sm text-xs font-semibold">CSS</p>
           </div>
 
-          <div className="flex flex-col items-center w-10">
+          <div className="flex flex-col items-center w-8 sm:w-10">
             <img
               style={{ width: "100%" }}
               src={tailwind}
               alt=""
             />
-            <p className="text-xl">TAILWIND</p>
+            <p className=" sm:text-sm text-xs font-semibold">TAILWIND</p>
           </div>
 
-          <div className="flex flex-col items-center w-10">
+          <div className="flex flex-col items-center w-8 sm:w-10">
             <img
               style={{ width: "1000%" }}
               src={js}
               alt=""
             />
-            <p className="text-xl">JS</p>
+            <p className="sm:text-sm text-xs font-semibold">JS</p>
           </div>
 
-          <div className="flex flex-col items-center w-10">
+          <div className="flex flex-col items-center w-8 sm:w-10">
             <img
               style={{ width: "100%" }}
               src={sass}
               alt=""
             />
-            <p className="text-xl">SASS</p>
+            <p className="sm:text-sm text-xs font-semibold">SASS</p>
           </div>
 
-          <div className="flex flex-col items-center w-10">
+          <div className="flex flex-col items-center w-8 sm:w-10">
             <img
               style={{ width: "100%" }}
               src={react}
               alt=""
             />
-            <p className="text-xl">REACT</p>
+            <p className="sm:text-sm text-xs font-semibold">REACT</p>
           </div>
         </div>
       </Tilt>
@@ -97,7 +97,7 @@ const MyStacks = () => {
         glarePosition="all"
         tiltMaxAngleX={10}
         tiltMaxAngleY={10}
-        className="w-[49%] bg-red-300 p-2 rounded-xl"
+        className=" bg-red-300 p-2 rounded-xl md:w-[47%] w-[100%]"
       >
         <div className="flex items-center gap-2 mt-3 ml-3 ">
           <FaDatabase className=" text-2xl " />
@@ -115,7 +115,7 @@ const MyStacks = () => {
               src={node}
               alt=""
             />
-            <p className="text-xl">NODE</p>
+            <p className="text-sm font-semibold">NODE</p>
           </div>
 
           <div className="flex flex-col items-center w-10">
@@ -124,7 +124,7 @@ const MyStacks = () => {
               src={express}
               alt=""
             />
-            <p className="text-xl">EXPRESS</p>
+            <p className="text-sm font-semibold">EXPRESS</p>
           </div>
 
           <div className="flex flex-col items-center w-10">
@@ -133,7 +133,7 @@ const MyStacks = () => {
               src={mongo}
               alt=""
             />
-            <p className="text-xl">MONGODB</p>
+            <p className="text-sm font-semibold">MONGODB</p>
           </div>
         </div>
       </Tilt>

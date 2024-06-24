@@ -14,7 +14,7 @@ const Home = () => {
           alt=" felix frontend backend fullstack"
         />
 
-        <h2 className=" lg:hidden max-lg:block font-bold text-2xl xs:text-4xl sm:text-5xl sm:py-2">
+        <h2 className=" lg:hidden max-lg:block font-bold text-3xl xs:text-4xl sm:text-5xl sm:py-2">
           Hi! I'm Felix <br /> A Fullstack Developer
         </h2>
 
