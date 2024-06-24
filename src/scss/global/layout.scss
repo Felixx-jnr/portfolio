@@ -17,9 +17,26 @@ body {
   margin-bottom: 20px;
 }
 
-.stacks {
-  max-width: 90%;
-  background: var(--stacksBackground);
-  border-radius: 20px;
-  padding: 10px;
+.project-one {
+  background: var(--projectOne);
+}
+
+.project-two {
+  background: var(--projectTwo);
+}
+
+.project-three {
+  background: var(--projectThree);
+}
+
+.project-four {
+  background: var(--projectFour);
+}
+
+.project-five {
+  background: var(--projectFive);
+}
+
+.project-six {
+  background: var(--projectSix);
 }

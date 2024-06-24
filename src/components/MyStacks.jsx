@@ -14,7 +14,7 @@ import Tilt from "react-parallax-tilt";
 
 const MyStacks = () => {
   return (
-    <div className="stacks flex flex-wrap justify-center gap-4 mx-auto my-0">
+    <div className="flex flex-wrap justify-center gap-4 mx-auto my-0 max-w-[90%] p-3 rounded-3xl">
       <Tilt
         glareEnable={true}
         glareMaxOpacity={0.3}

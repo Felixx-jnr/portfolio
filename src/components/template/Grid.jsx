@@ -6,7 +6,7 @@ const Grid = () => {
       {/* FIRST */}
       <a
         href="#"
-        className="section-one my-4 bg-pink-600"
+        className="section-one my-4 project-one"
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
@@ -46,7 +46,7 @@ const Grid = () => {
       {/* SECOND */}
       <a
         href="#"
-        className="section-two my-4 bg-red-600"
+        className="section-two my-4 project-two"
       >
         <video
           width="100%"
@@ -86,7 +86,7 @@ const Grid = () => {
       {/* THIRD */}
       <a
         href="#"
-        className="section-one my-4 bg-pink-600"
+        className="section-one my-4 project-three"
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
@@ -126,7 +126,7 @@ const Grid = () => {
       {/* FOURTH */}
       <a
         href="#"
-        className="section-two my-4 bg-red-600"
+        className="section-two my-4 project-four"
       >
         <video
           width="100%"
@@ -166,7 +166,7 @@ const Grid = () => {
       {/* FIFTH */}
       <a
         href="#"
-        className="section-one my-4 bg-pink-600"
+        className="section-one my-4 project-five"
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
@@ -206,7 +206,7 @@ const Grid = () => {
       {/* SIXTH */}
       <a
         href="#"
-        className="section-two my-4 bg-red-600"
+        className="section-two my-4 project-six"
       >
         <video
           width="100%"

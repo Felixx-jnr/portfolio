@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+
 import axios from "axios";
 
 const Contact = () => {
@@ -47,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact max-w-[60%] mx-auto  rounded-2xl">
+    <div className="contact max-w-[60%] bg-blue-400 mx-auto my-5 rounded-2xl p-2">
       <h1 className="text-4xl my-5 font-bold">GET IN TOUCH</h1>
 
       <form
@@ -94,16 +96,28 @@ const Contact = () => {
           />
         </div>
 
-        <div>
+        <div className="flex items-center justify-between">
           <button
             type="submit"
             disabled={isSending}
-            className=" border px-2 py-1"
+            className=" border px-3 py-1 rounded-xl"
           >
             Submit
           </button>
 
-          <div></div>
+          <div>
+            <ul className="flex space-x-2 lg:space-x-4  text-2xl">
+              <li>
+                <FaLinkedin />
+              </li>
+              <li>
+                <FaGithub />
+              </li>
+              <li>
+                <FaEnvelope />
+              </li>
+            </ul>
+          </div>
         </div>
 
         {message && <p>{message}</p>}
