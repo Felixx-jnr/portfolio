@@ -10,8 +10,8 @@ const Grid = () => {
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
-            <h3>MovieHq</h3>
-            <p className=" text-xs font-medium">HTML CSS JS REACT</p>
+            <h3>MOVIES HQ</h3>
+            <p className=" text-xs font-medium">REACT NODE TAILWIND</p>
           </div>
 
           <div className="one">
@@ -66,8 +66,8 @@ const Grid = () => {
 
         <div className="relative writeup ">
           <div className="absolute -top-7 max-md:-top- right-0 bg-background px-3 font-bold lg:text-xl text-right">
-            <h3>MovieHq</h3>
-            <p className=" text-xs font-medium">HTML CSS JS REACT</p>
+            <h3>GEN E-COMMERCE</h3>
+            <p className=" text-xs font-medium">HTML CSS JS </p>
           </div>
 
           <div className="two">
@@ -92,8 +92,8 @@ const Grid = () => {
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
-            <h3>MovieHq</h3>
-            <p className=" text-xs font-medium">HTML CSS JS REACT</p>
+            <h3>THE FIT CLUB</h3>
+            <p className=" text-xs font-medium">REACT CSS</p>
           </div>
 
           <div className="one">
@@ -148,8 +148,8 @@ const Grid = () => {
 
         <div className="relative writeup ">
           <div className="absolute -top-7 max-md:-top- right-0 bg-background px-3 font-bold lg:text-xl text-right">
-            <h3>MovieHq</h3>
-            <p className=" text-xs font-medium">HTML CSS JS REACT</p>
+            <h3>SOCIAL MEDIA DASHBOARD</h3>
+            <p className=" text-xs font-medium">HTML SCSS JS </p>
           </div>
 
           <div className="two">
@@ -174,8 +174,8 @@ const Grid = () => {
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
-            <h3>MovieHq</h3>
-            <p className=" text-xs font-medium">HTML CSS JS REACT</p>
+            <h3>ZWILT LANDING PAGE</h3>
+            <p className=" text-xs font-medium">REACT SCSS TAILWIND</p>
           </div>
 
           <div className="one">
@@ -230,8 +230,8 @@ const Grid = () => {
 
         <div className="relative writeup ">
           <div className="absolute -top-7 max-md:-top- right-0 bg-background px-3 font-bold lg:text-xl text-right">
-            <h3>MovieHq</h3>
-            <p className=" text-xs font-medium">HTML CSS JS REACT</p>
+            <h3>CHARITY </h3>
+            <p className=" text-xs font-medium">HTML CSS JS </p>
           </div>
 
           <div className="two">
