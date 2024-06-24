@@ -17,26 +17,11 @@ body {
   margin-bottom: 20px;
 }
 
-.project-one {
-  background: var(--projectOne);
+.projects {
+  background: var(--projectsBackground);
+  border-radius: 20px;
 }
 
-.project-two {
-  background: var(--projectTwo);
-}
-
-.project-three {
-  background: var(--projectThree);
-}
-
-.project-four {
-  background: var(--projectFour);
-}
-
-.project-five {
-  background: var(--projectFive);
-}
-
-.project-six {
-  background: var(--projectSix);
+.project-video {
+  border-radius: 20px;
 }

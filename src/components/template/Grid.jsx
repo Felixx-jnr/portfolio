@@ -6,7 +6,7 @@ const Grid = () => {
       {/* FIRST */}
       <a
         href="#"
-        className="section-one my-4 project-one"
+        className="section-one my-4 projects"
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
@@ -34,6 +34,7 @@ const Grid = () => {
           autoPlay
           loop
           muted
+          className="project-video"
         >
           <source
             src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1713026915/y5g9nahjcevsslfyvual.webm"
@@ -46,7 +47,7 @@ const Grid = () => {
       {/* SECOND */}
       <a
         href="#"
-        className="section-two my-4 project-two"
+        className="section-two my-4 projects"
       >
         <video
           width="100%"
@@ -54,6 +55,7 @@ const Grid = () => {
           autoPlay
           loop
           muted
+          className="project-video"
         >
           <source
             src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238251/qk5rdvevvjz7bw4ty92a.mp4"
@@ -86,7 +88,7 @@ const Grid = () => {
       {/* THIRD */}
       <a
         href="#"
-        className="section-one my-4 project-three"
+        className="section-one my-4 projects"
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
@@ -114,6 +116,7 @@ const Grid = () => {
           autoPlay
           loop
           muted
+          className="project-video"
         >
           <source
             src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238081/fgys9znryfbsfn51czh3.mp4"
@@ -126,7 +129,7 @@ const Grid = () => {
       {/* FOURTH */}
       <a
         href="#"
-        className="section-two my-4 project-four"
+        className="section-two my-4 projects"
       >
         <video
           width="100%"
@@ -134,6 +137,7 @@ const Grid = () => {
           autoPlay
           loop
           muted
+          className="project-video"
         >
           <source
             src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1713026912/afcadc0qr4ac3xjmyc7c.webm"
@@ -166,7 +170,7 @@ const Grid = () => {
       {/* FIFTH */}
       <a
         href="#"
-        className="section-one my-4 project-five"
+        className="section-one my-4 projects"
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
@@ -194,6 +198,7 @@ const Grid = () => {
           autoPlay
           loop
           muted
+          className="project-video"
         >
           <source
             src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238044/woubungbvzhp9vhuohfx.mp4"
@@ -206,7 +211,7 @@ const Grid = () => {
       {/* SIXTH */}
       <a
         href="#"
-        className="section-two my-4 project-six"
+        className="section-two my-4 projects"
       >
         <video
           width="100%"
@@ -214,6 +219,7 @@ const Grid = () => {
           autoPlay
           loop
           muted
+          className="project-video"
         >
           <source
             src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238238/acd4t44kycv5udhuhugs.mp4"

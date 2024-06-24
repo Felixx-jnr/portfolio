@@ -6,16 +6,11 @@
 @tailwind utilities;
 
 :root {
-  //DARK MODE
+  //LIGHT MODE
   --mainColor: #fff;
   --homeBackground: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   --stacksBackground: linear-gradient(to bottom, #5b6670 20%, #4b4f4a 70%);
-  --projectOne: linear-gradient(#ff9a8b, #ff6a88);
-  --projectTwo: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
-  --projectThree: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
-  --projectFour: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
-  --projectFive: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
-  --projectSix: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
+  --projectsBackground: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,11 +18,10 @@
     --mainColor: #2e2c2c;
     --homeBackground: radial-gradient(#4b6cb7 0%, #37528d 90%);
     --stacksBackground: linear-gradient(to bottom, #cde2f5 20%, #d9e6d7 70%);
-    --projectOne: linear-gradient(#66101f, #992346);
-    --projectTwo: linear-gradient(109.6deg, #b1999c 11.2%, #e9b7d4 92.2%);
-    --projectThree: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
-    --projectFour: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
-    --projectFive: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
-    --projectSix: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
+    --projectsBackground: linear-gradient(
+      109.6deg,
+      #f5b3ba 11.2%,
+      #dfaadf 92.2%
+    );
   }
 }
