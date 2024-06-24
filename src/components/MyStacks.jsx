@@ -22,7 +22,7 @@ const MyStacks = () => {
         glarePosition="all"
         tiltMaxAngleX={10}
         tiltMaxAngleY={10}
-        className="w-] bg-green-300 p-2 rounded-xl md:w-[47%] w-[100%]"
+        className=" bg-green-300 p-1 rounded-xl md:w-[47%] w-[100%]"
       >
         <div className="flex items-center gap-2 mt-3 ml-3 ">
           <FaCode className=" text-2xl " />

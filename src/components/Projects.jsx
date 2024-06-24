@@ -3,8 +3,8 @@ import Grid from "./template/Grid";
 
 const Projects = () => {
   return (
-    <div className="max-w-[90%] mx-auto p-2 my-5 rounded-xl">
-      <div className="reviews relative flex mt-5 mb-10 overflow-hidden">
+    <div className="max-w-[90%] mx-auto p-2 my-2 rounded-xl">
+      <div className="reviews relative flex mt-5 mb-5 overflow-hidden">
         <div className="reviews-slide flex">
           <div className="font-bold lg:text-5xl text-3xl w-[45rem] text-gold ">
             EXPLORE OUR WORLD
@@ -21,7 +21,6 @@ const Projects = () => {
           <div className="font-bold lg:text-5xl text-3xl w-[45rem] text-gold ">
             EXPLORE OUR WORLD
           </div>
-          *
         </div>
       </div>
       <div>

@@ -40,10 +40,12 @@
   .section-one {
     display: flex;
     flex-direction: column;
+    padding: 30px 10px;
   }
 
   .section-two {
     display: flex;
     flex-direction: column-reverse;
+    padding: 30px 10px;
   }
 }

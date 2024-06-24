@@ -47,13 +47,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact bg-red-300 max-w-[90%] mx-auto rounded-2xl">
-      <h1
-        id="contact"
-        className="contact__header"
-      >
-        CONTACT
-      </h1>
+    <div className="contact max-w-[60%] mx-auto  rounded-2xl">
+      <h1 className="text-4xl my-5 font-bold">GET IN TOUCH</h1>
 
       <form
         onSubmit={handleSubmit}
@@ -89,6 +84,7 @@ const Contact = () => {
         <div>
           <label htmlFor="message">Message:</label>
           <textarea
+            rows={1}
             id="message"
             name="message"
             placeholder="Your message..."
@@ -98,12 +94,17 @@ const Contact = () => {
           />
         </div>
 
-        <button
-          type="submit"
-          disabled={isSending}
-        >
-          Submit
-        </button>
+        <div>
+          <button
+            type="submit"
+            disabled={isSending}
+            className=" border px-2 py-1"
+          >
+            Submit
+          </button>
+
+          <div></div>
+        </div>
 
         {message && <p>{message}</p>}
       </form>
