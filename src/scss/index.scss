@@ -8,20 +8,22 @@
 :root {
   //LIGHT MODE
   --mainColor: #fff;
+  --nav: #fff;
   --homeBackground: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   --stacksBackground: linear-gradient(to bottom, #5b6670 20%, #4b4f4a 70%);
   --projectsBackground: linear-gradient(109.6deg, #ffdde1 11.2%, #e9e7e9 92.2%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --mainColor: #2e2c2c;
-    --homeBackground: radial-gradient(#4b6cb7 0%, #37528d 90%);
-    --stacksBackground: linear-gradient(to bottom, #cde2f5 20%, #d9e6d7 70%);
-    --projectsBackground: linear-gradient(
-      109.6deg,
-      #f5b3ba 11.2%,
-      #dfaadf 92.2%
-    );
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --mainColor: #2e2c2c;
+//     --nav: #fff;
+//     --homeBackground: linear-gradient(to top, #f5c6b2 0%, #7acef5 100%);
+//     --stacksBackground: linear-gradient(to bottom, #cde2f5 20%, #d9e6d7 70%);
+//     --projectsBackground: linear-gradient(
+//       109.6deg,
+//       #f5b3ba 11.2%,
+//       #dfaadf 92.2%
+//     );
+//   }
+// }

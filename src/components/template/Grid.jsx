@@ -5,13 +5,13 @@ const Grid = () => {
     <main className="">
       {/* FIRST */}
       <a
-        href="#"
+        href="https://moviehq.vercel.app"
         className="section-one my-4 projects"
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
             <h3>MOVIES HQ</h3>
-            <p className=" text-xs font-medium">REACT NODE TAILWIND</p>
+            <p className=" text-xs font-medium">REACT REDUX NODE TAILWIND</p>
           </div>
 
           <div className="one">
@@ -46,7 +46,7 @@ const Grid = () => {
 
       {/* SECOND */}
       <a
-        href="#"
+        href="https://gen-ecommerce.onrender.com/"
         className="section-two my-4 projects"
       >
         <video
@@ -87,7 +87,7 @@ const Grid = () => {
 
       {/* THIRD */}
       <a
-        href="#"
+        href="https://felix-gym.onrender.com"
         className="section-one my-4 projects"
       >
         <div className="relative writeup">
@@ -128,7 +128,7 @@ const Grid = () => {
 
       {/* FOURTH */}
       <a
-        href="#"
+        href="https://charity-master.onrender.com/"
         className="section-two my-4 projects"
       >
         <video
@@ -140,7 +140,7 @@ const Grid = () => {
           className="project-video"
         >
           <source
-            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1713026912/afcadc0qr4ac3xjmyc7c.webm"
+            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238238/acd4t44kycv5udhuhugs.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -148,8 +148,8 @@ const Grid = () => {
 
         <div className="relative writeup ">
           <div className="absolute -top-7 max-md:-top- right-0 bg-background px-3 font-bold lg:text-xl text-right">
-            <h3>SOCIAL MEDIA DASHBOARD</h3>
-            <p className=" text-xs font-medium">HTML SCSS JS </p>
+            <h3>CHARITY</h3>
+            <p className=" text-xs font-medium">HTML CSS JS </p>
           </div>
 
           <div className="two">
@@ -169,13 +169,13 @@ const Grid = () => {
 
       {/* FIFTH */}
       <a
-        href="#"
+        href="https://felixsocials.pages.dev"
         className="section-one my-4 projects"
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
-            <h3>ZWILT LANDING PAGE</h3>
-            <p className=" text-xs font-medium">REACT SCSS TAILWIND</p>
+            <h3>SOCIAL MEDIA DASHBOARD</h3>
+            <p className=" text-xs font-medium">HTML SCSS JS </p>
           </div>
 
           <div className="one">
@@ -201,7 +201,7 @@ const Grid = () => {
           className="project-video"
         >
           <source
-            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238044/woubungbvzhp9vhuohfx.mp4"
+            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1713026912/afcadc0qr4ac3xjmyc7c.webm"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -210,7 +210,7 @@ const Grid = () => {
 
       {/* SIXTH */}
       <a
-        href="#"
+        href="https://punch-assignment-beige.vercel.app/"
         className="section-two my-4 projects"
       >
         <video
@@ -222,7 +222,7 @@ const Grid = () => {
           className="project-video"
         >
           <source
-            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238238/acd4t44kycv5udhuhugs.mp4"
+            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238044/woubungbvzhp9vhuohfx.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -230,8 +230,8 @@ const Grid = () => {
 
         <div className="relative writeup ">
           <div className="absolute -top-7 max-md:-top- right-0 bg-background px-3 font-bold lg:text-xl text-right">
-            <h3>CHARITY </h3>
-            <p className=" text-xs font-medium">HTML CSS JS </p>
+            <h3>ZWILT LANDING PAGE</h3>
+            <p className=" text-xs font-medium">REACT SCSS TAILWIND</p>
           </div>
 
           <div className="two">

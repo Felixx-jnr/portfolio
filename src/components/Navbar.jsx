@@ -9,6 +9,13 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
+  const twitter = "https://x.com/Felixx_jnr?t=ViRhuKymNfmS_2pyCgv_cw&s=09";
+  const linkedin =
+    "https://www.linkedin.com/in/uyuoukoh-udoh-305a782b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
+  const email =
+    "mailto:uyuoukoh@gmail.com?subject=Lets%20Work&body=Hey%2C%20Good%20day%2C%20My%20name%20is...";
+  const github = "https://github.com/Felixx-jnr";
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [animateClass, setAnimateClass] = useState("");
   const dropdownRef = useRef(null);
@@ -43,7 +50,7 @@ const Navbar = () => {
   return (
     <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg z-50">
       <nav>
-        <div className="mx-auto flex justify-between items-center w-[86%] h-10 nav px-3 rounded-xl backdrop-blur-xl ">
+        <div className=" navbar mx-auto flex justify-between items-center w-[86%] h-10 nav px-3 rounded-xl backdrop-blur-xl ">
           <div>
             <a
               href="#"
@@ -54,12 +61,12 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <ul className="flex space-x-3 lg:space-x-5 text-xl font-semibold">
+            <ul className="flex space-x-3 lg:space-x-8 text-xl font-semibold">
               <li>
-                <a href="#">Project</a>
+                <a href="#project">Project</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -67,16 +74,36 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="flex space-x-2 lg:space-x-4  text-2xl">
               <li>
-                <FaLinkedin />
+                <a
+                  target="_blank"
+                  href={linkedin}
+                >
+                  <FaLinkedin />
+                </a>
               </li>
               <li>
-                <FaGithub />
+                <a
+                  target="_blank"
+                  href={github}
+                >
+                  <FaGithub />
+                </a>
               </li>
               <li>
-                <FaXTwitter />
+                <a
+                  target="_blank"
+                  href={twitter}
+                >
+                  <FaXTwitter />
+                </a>
               </li>
               <li>
-                <FaEnvelope />
+                <a
+                  target="_blank"
+                  href={email}
+                >
+                  <FaEnvelope />
+                </a>
               </li>
             </ul>
           </div>
@@ -117,20 +144,10 @@ const Navbar = () => {
 
               <ul className="flex flex-col mt-3 space-y-3 items-center text-xl sm:text-2xl font-semibold text-black ">
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-gray-300"
-                  >
-                    Project
-                  </a>
+                  <a href="#project">Project</a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    className="hover:text-gray-300"
-                  >
-                    Contact
-                  </a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
 

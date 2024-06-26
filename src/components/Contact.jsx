@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import axios from "axios";
-// import "./Contact.css"; // Make sure to import the CSS file
 
 const Contact = () => {
+  const linkedin =
+    "https://www.linkedin.com/in/uyuoukoh-udoh-305a782b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
+  const email =
+    "mailto:uyuoukoh@gmail.com?subject=Lets%20Work&body=Hey%2C%20Good%20day%2C%20My%20name%20is...";
+  const github = "https://github.com/Felixx-jnr";
+
   const [isOverlayVisible, setIsOverlayVisible] = useState(true);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -45,18 +51,21 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative contact max-w-[60%] bg-blue-400 mx-auto my-5 rounded-2xl p-2">
+    <div
+      className="relative contact max-w-[90%] bg-red-200 mx-auto my-5 rounded-2xl p-2"
+      id="contact"
+    >
       <div
         className={`absolute -top-0 -left-0 rounded-2xl w-full h-full bg-red-200 transition-all duration-500 ${
           isOverlayVisible ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-          <p className="text-4xl text-center">
+        <div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center">
+          <p className="text-4xl text-center font-semibold my-4">
             INTERESTED IN WORKING TOGETHER?
           </p>
           <button
-            className="p-2 bg-slate-200 rounded-lg"
+            className=" text-2xl p-2 bg-red-300 hover:bg rounded-lg font-semibold hover:bg-red-400 hover:text-white  "
             onClick={() => setIsOverlayVisible(false)}
           >
             GET IN TOUCH
@@ -64,11 +73,9 @@ const Contact = () => {
         </div>
       </div>
 
-      <h1 className="flex text-4xl my-5 font-bold">GET IN TOUCH</h1>
-
       <form
         onSubmit={handleSubmit}
-        className="contact__form"
+        className="contact__form max-w-[65%] mx-auto"
         id="contact"
       >
         <div>
@@ -122,13 +129,28 @@ const Contact = () => {
           <div>
             <ul className="flex space-x-2 lg:space-x-4 text-2xl">
               <li>
-                <FaLinkedin />
+                <a
+                  href={linkedin}
+                  target="_blank"
+                >
+                  <FaLinkedin />
+                </a>
               </li>
               <li>
-                <FaGithub />
+                <a
+                  href={github}
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
               </li>
               <li>
-                <FaEnvelope />
+                <a
+                  href={email}
+                  target="_blank"
+                >
+                  <FaEnvelope />
+                </a>
               </li>
             </ul>
           </div>
