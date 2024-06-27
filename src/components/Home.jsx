@@ -26,9 +26,12 @@ const Home = () => {
           I build things for the web
         </p>
 
-        <button className=" px-2 py-1 border bg-white font-semibold rounded-2xl">
+        <a
+          href="#contact"
+          className=" px-2 py-1 border bg-white font-semibold rounded-2xl"
+        >
           Get in touch
-        </button>
+        </a>
       </div>
     </div>
   );

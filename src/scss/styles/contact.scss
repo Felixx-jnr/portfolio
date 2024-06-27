@@ -3,33 +3,42 @@
 .contact {
   &__form label {
     display: block;
-    margin-bottom: rem(3);
-    font-size: rem(20);
     font-weight: bold;
+    padding: rem(0) rem(5);
+
+    @media (max-width: 350px) {
+      font-size: rem(13);
+    }
   }
 
   &__form input {
     width: 100%;
-    height: rem(40);
+
     max-width: 100%;
-    margin: rem(3) 0 rem(15) 0;
-    padding: rem(5);
-    font-size: rem(20);
+    margin: rem(2) 0 rem(5) 0;
+    padding: rem(0) rem(5);
+    font-size: rem(18);
     font-weight: 500;
     border-bottom: 1px solid;
     background: rgb(254 202 202);
+
+    @media (max-width: 350px) {
+      font-size: rem(13);
+    }
   }
 
   &__form textarea {
     width: 100%;
-
     max-width: 100%;
-    margin: rem(3) 0 rem(15) 0;
-    padding: rem(5);
-    font-size: rem(20);
+    padding: rem(0) rem(5);
+    font-size: rem(18);
     font-weight: 500;
     background: rgb(254 202 202);
     border-bottom: 1px solid;
+
+    @media (max-width: 350px) {
+      font-size: rem(13);
+    }
   }
 }
 

@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
     <div
-      className="relative contact max-w-[90%] bg-red-200 mx-auto my-5 rounded-2xl p-2"
+      className="relative contact w-[90%] sm:w-[70%] bg-red-200 mx-auto my-5 rounded-2xl p-2"
       id="contact"
     >
       <div
@@ -61,11 +61,11 @@ const Contact = () => {
         }`}
       >
         <div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center">
-          <p className="text-4xl text-center font-semibold my-4">
+          <p className="sm:text-4xl text-2xl text-center font-bold my-4">
             INTERESTED IN WORKING TOGETHER?
           </p>
           <button
-            className=" text-2xl p-2 bg-red-300 hover:bg rounded-lg font-semibold hover:bg-red-400 hover:text-white  "
+            className=" text-sm sm:text-2xl p-2 bg-red-300 hover:bg rounded-lg font-bold hover:bg-red-400 hover:text-white  "
             onClick={() => setIsOverlayVisible(false)}
           >
             GET IN TOUCH
@@ -75,7 +75,7 @@ const Contact = () => {
 
       <form
         onSubmit={handleSubmit}
-        className="contact__form max-w-[65%] mx-auto"
+        className="contact__form lg:w-[70%] w-full mx-auto px-3 py-3"
         id="contact"
       >
         <div>
@@ -84,7 +84,7 @@ const Contact = () => {
             type="text"
             id="name"
             name="name"
-            placeholder="Name"
+            placeholder="Name . . ."
             value={formData.name}
             onChange={handleChange}
             required
@@ -97,7 +97,7 @@ const Contact = () => {
             type="email"
             id="email"
             name="email"
-            placeholder="Email"
+            placeholder="Email . . ."
             value={formData.email}
             onChange={handleChange}
             required
@@ -110,7 +110,7 @@ const Contact = () => {
             rows={1}
             id="message"
             name="message"
-            placeholder="Your message..."
+            placeholder="Your message . . ."
             value={formData.message}
             onChange={handleChange}
             required
@@ -121,13 +121,13 @@ const Contact = () => {
           <button
             type="submit"
             disabled={isSending}
-            className="border px-3 py-1 rounded-xl"
+            className="border px-3 py-1 rounded-xl text-sm md:text-xl my-2 bg-red-300 hover:bg font-semibold hover:bg-red-400 hover:text-white"
           >
             Submit
           </button>
 
           <div>
-            <ul className="flex space-x-2 lg:space-x-4 text-2xl">
+            <ul className="flex space-x-2 md:space-x-5 text-xl md:text-2xl">
               <li>
                 <a
                   href={linkedin}

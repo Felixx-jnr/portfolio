@@ -6,10 +6,10 @@ const Grid = () => {
       {/* FIRST */}
       <a
         href="https://moviehq.vercel.app"
-        className="section-one my-4 projects"
+        className="section-one my-4 projects pt-10 "
       >
         <div className="relative writeup">
-          <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
+          <div className="absolute -top-7 max-md:-top-8 left-0 px-2 font-bold lg:text-xl">
             <h3>MOVIES HQ</h3>
             <p className=" text-xs font-medium">REACT REDUX NODE TAILWIND</p>
           </div>
@@ -47,7 +47,7 @@ const Grid = () => {
       {/* SECOND */}
       <a
         href="https://gen-ecommerce.onrender.com/"
-        className="section-two my-4 projects"
+        className="section-two my-4 projects pt-10"
       >
         <video
           width="100%"
@@ -88,7 +88,7 @@ const Grid = () => {
       {/* THIRD */}
       <a
         href="https://felix-gym.onrender.com"
-        className="section-one my-4 projects"
+        className="section-one my-4 projects pt-10"
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
@@ -129,7 +129,7 @@ const Grid = () => {
       {/* FOURTH */}
       <a
         href="https://charity-master.onrender.com/"
-        className="section-two my-4 projects"
+        className="section-two my-4 projects pt-10"
       >
         <video
           width="100%"
@@ -170,7 +170,7 @@ const Grid = () => {
       {/* FIFTH */}
       <a
         href="https://felixsocials.pages.dev"
-        className="section-one my-4 projects"
+        className="section-one my-4 projects pt-10"
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
@@ -211,7 +211,7 @@ const Grid = () => {
       {/* SIXTH */}
       <a
         href="https://punch-assignment-beige.vercel.app/"
-        className="section-two my-4 projects"
+        className="section-two my-4 projects pt-10"
       >
         <video
           width="100%"
