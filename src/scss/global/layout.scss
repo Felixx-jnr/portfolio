@@ -13,7 +13,8 @@ body {
   padding: 4px;
   border-radius: 20px;
   background: var(--homeBackground);
-  color: black;
+  color: #771b48;
+  //color: #000;
   margin-bottom: 20px;
 }
 
@@ -24,4 +25,8 @@ body {
 
 .project-video {
   border-radius: 20px;
+}
+
+.drop {
+  background: var(--homeBackground);
 }

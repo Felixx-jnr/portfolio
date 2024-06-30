@@ -9,19 +9,19 @@ const Projects = () => {
     >
       <div className="reviews relative flex mt-5 mb-5 overflow-hidden">
         <div className="reviews-slide flex">
-          <div className="font-bold lg:text-5xl text-3xl w-[45rem] text-gold ">
+          <div className="font-bold lg:text-5xl text-3xl w-[45rem] text-[#771b48]">
             MY PROJECTS
           </div>
-          <div className="font-bold lg:text-5xl text-3xl w-[45rem] text-gold ">
+          <div className="font-bold lg:text-5xl text-3xl w-[45rem] text-[#771b48]">
             MY PROJECTS
           </div>
         </div>
 
         <div className="reviews-slide flex">
-          <div className="font-bold lg:text-5xl text-3xl w-[45rem] text-gold ">
+          <div className="font-bold lg:text-5xl text-3xl w-[45rem] text-[#771b48] ">
             MY PROJECTS
           </div>
-          <div className="font-bold lg:text-5xl text-3xl w-[45rem] text-gold ">
+          <div className="font-bold lg:text-5xl text-3xl w-[45rem] text-[#771b48] ">
             MY PROJECTS
           </div>
         </div>

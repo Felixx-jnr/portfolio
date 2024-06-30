@@ -10,12 +10,12 @@ const Grid = () => {
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 px-2 font-bold lg:text-xl">
-            <h3>MOVIES HQ</h3>
+            <h3 className="text-[#771b48]">MOVIES HQ</h3>
             <p className=" text-xs font-medium">REACT REDUX NODE TAILWIND</p>
           </div>
 
           <div className="one">
-            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold ">
+            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
               01
             </h1>
 
@@ -66,7 +66,7 @@ const Grid = () => {
 
         <div className="relative writeup ">
           <div className="absolute -top-7 max-md:-top- right-0 bg-background px-3 font-bold lg:text-xl text-right">
-            <h3>GEN E-COMMERCE</h3>
+            <h3 className="text-[#771b48]">GEN E-COMMERCE</h3>
             <p className=" text-xs font-medium">HTML CSS JS </p>
           </div>
 
@@ -78,7 +78,7 @@ const Grid = () => {
               aliquid quo aut, similique
             </p>
 
-            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold  ">
+            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48] ">
               02
             </h1>
           </div>
@@ -92,12 +92,12 @@ const Grid = () => {
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
-            <h3>THE FIT CLUB</h3>
+            <h3 className="text-[#771b48]">THE FIT CLUB</h3>
             <p className=" text-xs font-medium">REACT CSS</p>
           </div>
 
           <div className="one">
-            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold ">
+            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
               03
             </h1>
 
@@ -148,7 +148,7 @@ const Grid = () => {
 
         <div className="relative writeup ">
           <div className="absolute -top-7 max-md:-top- right-0 bg-background px-3 font-bold lg:text-xl text-right">
-            <h3>CHARITY</h3>
+            <h3 className="text-[#771b48]">CHARITY</h3>
             <p className=" text-xs font-medium">HTML CSS JS </p>
           </div>
 
@@ -160,7 +160,7 @@ const Grid = () => {
               aliquid quo aut, similique
             </p>
 
-            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold  ">
+            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48] ">
               04
             </h1>
           </div>
@@ -174,12 +174,12 @@ const Grid = () => {
       >
         <div className="relative writeup">
           <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
-            <h3>SOCIAL MEDIA DASHBOARD</h3>
+            <h3 className="text-[#771b48]">SOCIAL MEDIA DASHBOARD</h3>
             <p className=" text-xs font-medium">HTML SCSS JS </p>
           </div>
 
           <div className="one">
-            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold ">
+            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
               05
             </h1>
 
@@ -230,7 +230,7 @@ const Grid = () => {
 
         <div className="relative writeup ">
           <div className="absolute -top-7 max-md:-top- right-0 bg-background px-3 font-bold lg:text-xl text-right">
-            <h3>ZWILT LANDING PAGE</h3>
+            <h3 className="text-[#771b48]">ZWILT LANDING PAGE</h3>
             <p className=" text-xs font-medium">REACT SCSS TAILWIND</p>
           </div>
 
@@ -242,7 +242,7 @@ const Grid = () => {
               aliquid quo aut, similique
             </p>
 
-            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold  ">
+            <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
               06
             </h1>
           </div>

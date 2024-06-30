@@ -14,21 +14,21 @@ const Home = () => {
           alt=" felix frontend backend fullstack"
         />
 
-        <h2 className=" lg:hidden max-lg:block font-bold text-3xl xs:text-4xl sm:text-5xl sm:py-2">
+        <h2 className=" lg:hidden max-lg:block font-bold text-3xl xs:text-4xl sm:text-5xl mt-2">
           Hi! I'm Felix <br /> A Fullstack Developer
         </h2>
 
-        <h2 className="max-lg:hidden font-bold text-5xl py-1 sm:py-2">
+        <h2 className="max-lg:hidden font-bold text-5xl my-2">
           Hi! I'm Felix - A Fullstack Developer
         </h2>
 
-        <p className=" xs:text-2xl font-semibold py-2 xs:py-3">
+        <p className=" xs:text-2xl font-semibold my-2">
           I build things for the web
         </p>
 
         <a
           href="#contact"
-          className=" px-2 py-1 border bg-white font-semibold rounded-2xl"
+          className=" inline-block px-2 py-2 mt-1 border bg-white font-bold rounded-2xl"
         >
           Get in touch
         </a>

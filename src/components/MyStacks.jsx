@@ -25,10 +25,10 @@ const MyStacks = () => {
         className=" bg-pink-100/30 p-1 rounded-xl md:w-[47%] w-[100%]"
       >
         <div className="flex items-center gap-2 mt-3 ml-3 ">
-          <FaCode className=" text-2xl " />
-          <h3 className=" text-xl font-semibold">Frontend</h3>
+          <FaCode className=" text-2xl text-[#771b48]" />
+          <h3 className=" text-xl font-semibold text-[#771b48]">Frontend</h3>
         </div>
-        <p className="my-2 text-xl leading-6 ml-3">
+        <p className="my-2 text-xl leading-6 ml-3 ">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum at
           vitae laborum aliquam facilis optio obcaecati officia voluptatibus
           deserunt similique!
@@ -99,9 +99,9 @@ const MyStacks = () => {
         tiltMaxAngleY={10}
         className=" bg-pink-100/30 p-2 rounded-xl md:w-[47%] w-[100%]"
       >
-        <div className="flex items-center gap-2 mt-3 ml-3 ">
-          <FaDatabase className=" text-2xl " />
-          <h3 className=" text-xl font-semibold">Backend</h3>
+        <div className="flex items-center gap-2 mt-3 ml-3  ">
+          <FaDatabase className=" text-2xl text-[#771b48]" />
+          <h3 className=" text-xl font-semibold text-[#771b48]">Backend</h3>
         </div>
         <p className="my-2 text-xl leading-6 ml-3">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum at

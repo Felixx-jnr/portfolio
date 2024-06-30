@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg z-50">
       <nav>
-        <div className=" navbar mx-auto flex justify-between items-center w-[86%] h-10 nav px-3 rounded-xl backdrop-blur-xl ">
+        <div className=" max-md:border-2 max-md:border-[#912056]/50 mx-auto flex justify-between items-center w-[86%] h-10 nav px-3 rounded-xl backdrop-blur-xl ">
           <div>
             <a
               href="#"
@@ -127,10 +127,10 @@ const Navbar = () => {
               onClick={toggleMenu}
             ></div>
             <div
-              className={`absolute bg-sky-100 flex flex-col justify-center items-center -top-2 right-0 md:hidden z-50 h-screen w-screen ${animateClass}`}
+              className={`absolute drop flex flex-col justify-center items-center -top-2 right-0 md:hidden z-50 h-screen w-screen ${animateClass}`}
               ref={dropdownRef}
             >
-              <div className="absolute top-2 flex justify-between items-center w-[86%] bg-white/50 h-10 px-3 rounded-xl backdrop-blur-lg border-2 border-white">
+              <div className="absolute top-2 flex justify-between items-center w-[86%] h-10 px-3 rounded-xl backdrop-blur-lg max-md:border-2 max-md:border-[#912056]/50">
                 <div>
                   <a
                     href="#"
