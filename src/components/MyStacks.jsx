@@ -30,11 +30,10 @@ const MyStacks = () => {
         </div>
         <p className="my-2 text-xl leading-6 ml-3 ">
           I am a passionate frontend developer with a keen eye for design and
-          user experience. Proficient in HTML, CSS, and JavaScript, I create
-          responsive and interactive web applications. With experience in
-          frameworks like React and Angular, I build dynamic and efficient
-          websites. My goal is to craft seamless user experiences that are both
-          visually appealing and highly functional.
+          user experience. I create responsive and interactive web applications.
+          With experience in React , I build dynamic and efficient websites. I
+          craft seamless user experiences that are both visually appealing and
+          highly functional.
         </p>
         <div className=" flex justify-around">
           <div className="flex flex-col items-center w-8 sm:w-10 ">
@@ -108,13 +107,10 @@ const MyStacks = () => {
         </div>
         <p className="my-2 text-xl leading-6 ml-3">
           I am a versatile developer skilled in both frontend and backend
-          development. On the frontend, I use HTML, CSS, and JavaScript to
-          create responsive and interactive web applications, leveraging
-          frameworks like React and Angular for dynamic user experiences. On the
-          backend, I work with Node.js, Express, and databases such as MongoDB
-          and SQL to build robust and scalable server-side applications. My goal
-          is to deliver seamless, end-to-end solutions that are both visually
-          appealing and highly functional.
+          development. On the backend, I work with Node.js, Express, and
+          databases such as MongoDB to build scalable server-side applications.
+          I deliver seamless, end-to-end solutions that are and highly
+          functional, scalable and efficient
         </p>
         <div className="flex justify-around">
           <div className="flex flex-col items-center w-10">

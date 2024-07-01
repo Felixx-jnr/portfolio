@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Luxurious+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
-  --bebas: "Bebas Neue", sans-serif;
-  --luxurious: "Luxurious Script", cursive;
+  --raleway: "Raleway", sans-serif;
   --dosis: "Dosis", sans-serif;
 }
 
 body {
-  font-family: var(--dosis);
+  font-family: var(--raleway);
 }
 
 // h1 {

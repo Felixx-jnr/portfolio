@@ -107,14 +107,11 @@ const Grid = () => {
             </h1>
 
             <p className="pt-4 font-semibold text-left p-2 lg:text-sm text-xs">
-              I designed and developed a landing page for a gym using HTML, CSS,
-              and JavaScript. The landing page features a modern, responsive
-              design that highlights the gym's services, facilities, and
-              membership plans. Engaging animations and interactive elements
-              enhance user experience, while a clean and intuitive layout
-              ensures easy navigation. This project demonstrates my ability to
-              create visually appealing and user-friendly landing pages that
-              effectively communicate a brand's message.
+              I designed and developed a landing page for a gym using REACT and
+              CSS. The landing page features a responsive design that highlights
+              the gym's services, facilities, and membership plans. It has
+              interactive elements enhance user experience, with a clean and
+              intuitive layout
             </p>
           </div>
         </div>
@@ -164,15 +161,11 @@ const Grid = () => {
 
           <div className="two">
             <p className="pt-4 font-semibold text-right p-2 lg:text-sm text-xs">
-              I designed and developed a landing page for a nature charity
+              Designed and developed a landing page for a nature charity
               organization using HTML, CSS, and JavaScript. The landing page
               features a clean, responsive design that showcases the
-              organization's mission, ongoing projects, and ways to get
-              involved. Engaging visuals, animations, and interactive elements
-              create an immersive experience, encouraging visitors to support
-              the cause. This project highlights my ability to create impactful
-              and user-friendly landing pages that effectively convey a
-              meaningful message.
+              organization's mission and ways to get involved. Engaging visuals,
+              animations, and interactive elements
             </p>
 
             <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48] ">
@@ -200,12 +193,10 @@ const Grid = () => {
             </h1>
 
             <p className="pt-4 font-semibold text-left p-2 lg:text-sm text-xs">
-              I built a social media engagement page with a light and dark mode
+              Built a social media engagement page with a light and dark mode
               toggle. This work was inspired by the design from frontend mentor,
               although I added a bit of my styling with the front card cover and
               the flip effect on hover. This is a single-page site, This project
-              also gave me a proper understanding of the SASS technology that
-              was used for the styling.
             </p>
           </div>
         </div>
@@ -255,10 +246,11 @@ const Grid = () => {
 
           <div className="two">
             <p className="pt-4 font-semibold text-right p-2 lg:text-sm text-xs">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              harum minus, fuga esse reiciendis accusantium ad quam molestias
-              dignissimos soluta? Quasi soluta nulla quam sint expedita maxime
-              aliquid quo aut, similique
+              Designed and developed a landing page for an interview platform
+              using REACT, TAILWIND and SCSS The landing page features a sleek,
+              and responsive design with Interactive elements and engaging
+              visuals. It provides an intuitive user experience, while clear and
+              intuitive layout
             </p>
 
             <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
