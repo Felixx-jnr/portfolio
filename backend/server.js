@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const corsOption = {
-  origin: "http://localhost:3000/",
+  origin: "https://portfolio-phi-livid-78.vercel.app/",
 };
 
 app.use(cors(corsOption));
