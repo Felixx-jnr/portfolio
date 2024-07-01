@@ -5,6 +5,7 @@ const Grid = () => {
     <main className="">
       {/* FIRST */}
       <a
+        target="_blank"
         href="https://moviehq.vercel.app"
         className="section-one my-4 projects pt-10 "
       >
@@ -20,10 +21,11 @@ const Grid = () => {
             </h1>
 
             <p className="pt-4 font-semibold text-left p-2 lg:text-sm text-xs">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              harum minus, fuga esse reiciendis accusantium ad quam molestias
-              dignissimos soluta? Quasi soluta nulla quam sint expedita maxime
-              aliquid quo aut, similique
+              Developed a movie app using the MERN stack (MongoDB, Express,
+              React, Node.js) which has the CRUD system. The app allows admin
+              users to create, read, update, and delete movie entries
+              seamlessly. With React for the frontend, while Node.js and Express
+              handle the server side. MongoDB is used for the data storage
             </p>
           </div>
         </div>
@@ -46,6 +48,7 @@ const Grid = () => {
 
       {/* SECOND */}
       <a
+        target="_blank"
         href="https://gen-ecommerce.onrender.com/"
         className="section-two my-4 projects pt-10"
       >
@@ -72,10 +75,11 @@ const Grid = () => {
 
           <div className="two">
             <p className="pt-4 font-semibold text-right p-2 lg:text-sm text-xs">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              harum minus, fuga esse reiciendis accusantium ad quam molestias
-              dignissimos soluta? Quasi soluta nulla quam sint expedita maxime
-              aliquid quo aut, similique
+              Developed the frontend of an e-commerce store using HTML, CSS, and
+              JavaScript. It has a user-friendly interface and responsive
+              design. JavaScript powers interactive elements while HTML and CSS
+              ensure a clean and appealing layout. This project showcases my
+              ability to create a visually appealing e-commerce experience.
             </p>
 
             <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48] ">
@@ -87,6 +91,7 @@ const Grid = () => {
 
       {/* THIRD */}
       <a
+        target="_blank"
         href="https://felix-gym.onrender.com"
         className="section-one my-4 projects pt-10"
       >
@@ -102,10 +107,14 @@ const Grid = () => {
             </h1>
 
             <p className="pt-4 font-semibold text-left p-2 lg:text-sm text-xs">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              harum minus, fuga esse reiciendis accusantium ad quam molestias
-              dignissimos soluta? Quasi soluta nulla quam sint expedita maxime
-              aliquid quo aut, similique
+              I designed and developed a landing page for a gym using HTML, CSS,
+              and JavaScript. The landing page features a modern, responsive
+              design that highlights the gym's services, facilities, and
+              membership plans. Engaging animations and interactive elements
+              enhance user experience, while a clean and intuitive layout
+              ensures easy navigation. This project demonstrates my ability to
+              create visually appealing and user-friendly landing pages that
+              effectively communicate a brand's message.
             </p>
           </div>
         </div>
@@ -128,6 +137,7 @@ const Grid = () => {
 
       {/* FOURTH */}
       <a
+        target="_blank"
         href="https://charity-master.onrender.com/"
         className="section-two my-4 projects pt-10"
       >
@@ -154,10 +164,15 @@ const Grid = () => {
 
           <div className="two">
             <p className="pt-4 font-semibold text-right p-2 lg:text-sm text-xs">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              harum minus, fuga esse reiciendis accusantium ad quam molestias
-              dignissimos soluta? Quasi soluta nulla quam sint expedita maxime
-              aliquid quo aut, similique
+              I designed and developed a landing page for a nature charity
+              organization using HTML, CSS, and JavaScript. The landing page
+              features a clean, responsive design that showcases the
+              organization's mission, ongoing projects, and ways to get
+              involved. Engaging visuals, animations, and interactive elements
+              create an immersive experience, encouraging visitors to support
+              the cause. This project highlights my ability to create impactful
+              and user-friendly landing pages that effectively convey a
+              meaningful message.
             </p>
 
             <h1 className=" lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48] ">
@@ -169,6 +184,7 @@ const Grid = () => {
 
       {/* FIFTH */}
       <a
+        target="_blank"
         href="https://felixsocials.pages.dev"
         className="section-one my-4 projects pt-10"
       >
@@ -184,10 +200,12 @@ const Grid = () => {
             </h1>
 
             <p className="pt-4 font-semibold text-left p-2 lg:text-sm text-xs">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
-              harum minus, fuga esse reiciendis accusantium ad quam molestias
-              dignissimos soluta? Quasi soluta nulla quam sint expedita maxime
-              aliquid quo aut, similique
+              I built a social media engagement page with a light and dark mode
+              toggle. This work was inspired by the design from frontend mentor,
+              although I added a bit of my styling with the front card cover and
+              the flip effect on hover. This is a single-page site, This project
+              also gave me a proper understanding of the SASS technology that
+              was used for the styling.
             </p>
           </div>
         </div>
@@ -210,6 +228,7 @@ const Grid = () => {
 
       {/* SIXTH */}
       <a
+        target="_blank"
         href="https://punch-assignment-beige.vercel.app/"
         className="section-two my-4 projects pt-10"
       >

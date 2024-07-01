@@ -154,10 +154,13 @@ const Contact = () => {
               </li>
             </ul>
           </div>
+          {}
         </div>
 
         {message && <p>{message}</p>}
       </form>
+
+      <div></div>
     </div>
   );
 };
