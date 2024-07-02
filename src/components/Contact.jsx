@@ -29,7 +29,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "https://felix-portfolio-two.vercel.app/",
+        "https://felix-portfolio-two.vercel.app/send-mail",
         formData
       );
 
