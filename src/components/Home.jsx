@@ -29,7 +29,7 @@ const Home = () => {
 
         <a
           href="#contact"
-          className=" inline-block px-2 py-2 mt-1 border bg-white font-bold rounded-2xl"
+          className=" inline-block px-2 py-2 mt-1 border bg-[#912056]/30 hover:bg-[#912056]/80 hover:text-white font-bold rounded-2xl"
         >
           Get in touch
         </a>
