@@ -193,7 +193,13 @@ const Navbar = () => {
           )}
         </nav>
       </div>
-      <div className=" fixed -rotate-90 -right-12 bottom-0  mb-20 ">
+      <div className=" fixed -rotate-90 -right-24 bottom-0 mb-20 flex justify-center items-center gap-2 ">
+        <div className="h-1 w-20 bg-[#844]"></div>
+        <p>uyuoukoh@gmail.com</p>
+      </div>
+
+      <div className=" fixed -rotate-90 -left-52 p-1 bottom-0 mb-20 flex justify-center items-center gap-2 ">
+        <div className="h-1 w-72 bg-[#844]"></div>
         <p>uyuoukoh@gmail.com</p>
       </div>
     </>
