@@ -29,7 +29,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "https://felixxportfolio.onrender.com/",
+        "https://felix-portfolio-6cj2d4vbt-felixx-jnrs-projects.vercel.app/",
         formData
       );
 
