@@ -1,5 +1,6 @@
 import React from "react";
 import pic1 from "../assets/edit1.jpg";
+import TypingEffect from "./template/Typing";
 
 const Home = () => {
   return (
@@ -15,11 +16,11 @@ const Home = () => {
         />
 
         <h2 className=" lg:hidden max-lg:block font-bold text-3xl xs:text-4xl sm:text-5xl mt-2">
-          Hi! I'm Felix <br /> A Fullstack Developer
+          Hi! I'm Felix <br /> <TypingEffect />
         </h2>
 
         <h2 className="max-lg:hidden font-bold text-5xl my-2">
-          Hi! I'm Felix - A Fullstack Developer
+          Hi! I'm Felix - <TypingEffect />
         </h2>
 
         <p className=" xs:text-2xl font-semibold my-2">
