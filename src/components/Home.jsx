@@ -1,10 +1,11 @@
 import React from "react";
 import pic1 from "../assets/edit1.jpg";
 import TypingEffect from "./template/Typing";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div className=" relative mx-2 xs:mx-6 md:mx-20 top-1/2 -translate-y-1/2 ">
+    <motion.div className=" relative mx-2 xs:mx-6 md:mx-20 top-1/2 -translate-y-1/2 ">
       <div>
         <img
           style={{
@@ -34,7 +35,7 @@ const Home = () => {
           Get in touch
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

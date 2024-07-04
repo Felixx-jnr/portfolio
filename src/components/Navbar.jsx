@@ -7,6 +7,18 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { motion } from "framer-motion";
+
+const leftVariant = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      delay: 0.5,
+    },
+  },
+};
 
 const Navbar = () => {
   const twitter = "https://x.com/Felixx_jnr?t=ViRhuKymNfmS_2pyCgv_cw&s=09";
@@ -51,7 +63,12 @@ const Navbar = () => {
     <>
       <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg z-50">
         <nav>
-          <div className=" bg-[#912056]/10 max-md:border-2 max-md:border-[#912056]/50 mx-auto flex justify-between items-center w-[86%] h-10 nav px-3 rounded-xl backdrop-blur-xl ">
+          <motion.div
+            variants={leftVariant}
+            animate="animate"
+            initial="initial"
+            className=" bg-[#912056]/10 max-md:border-2 max-md:border-[#912056]/50 mx-auto flex justify-between items-center w-[86%] h-10 nav px-3 rounded-xl backdrop-blur-xl "
+          >
             <div>
               <a
                 href="#"
@@ -118,7 +135,7 @@ const Navbar = () => {
                 {isMenuOpen ? "" : <FaBars />}
               </button>
             </div>
-          </div>
+          </motion.div>
 
           {/* Mobile menu with overlay */}
           {isMenuOpen && (
