@@ -3,9 +3,25 @@ import pic1 from "../assets/edit1.jpg";
 import TypingEffect from "./template/Typing";
 import { motion } from "framer-motion";
 
+const slideUpVariant = {
+  initial: { opacity: 0, y: 10 },
+  animate: {
+    opacity: 1,
+    y: -90,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 const Home = () => {
   return (
-    <motion.div className=" relative mx-2 xs:mx-6 md:mx-20 top-1/2 -translate-y-1/2 ">
+    <motion.div
+      variants={slideUpVariant}
+      initial="initial"
+      animate="animate"
+      className=" relative mx-2 xs:mx-6 md:mx-20 top-1/2 -translate-y-1/2 overflow-hidden"
+    >
       <div>
         <img
           style={{

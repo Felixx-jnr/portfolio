@@ -9,13 +9,13 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
-const leftVariant = {
+const fadeInVariant = {
   initial: { opacity: 0 },
   animate: {
     opacity: 1,
     transition: {
-      duration: 1,
-      delay: 0.5,
+      duration: 2,
+      delay: 1,
     },
   },
 };
@@ -64,7 +64,7 @@ const Navbar = () => {
       <div className="fixed left-1/2 -translate-x-1/2 w-[100%] rounded-lg z-50">
         <nav>
           <motion.div
-            variants={leftVariant}
+            variants={fadeInVariant}
             animate="animate"
             initial="initial"
             className=" bg-[#912056]/10 max-md:border-2 max-md:border-[#912056]/50 mx-auto flex justify-between items-center w-[86%] h-10 nav px-3 rounded-xl backdrop-blur-xl "
@@ -85,6 +85,14 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a href="#contact">Contact</a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://drive.google.com/file/d/18WJuXwGb8agrcUUNyXKaLHOTDVeYhKL9/view?usp=drive_link"
+                  >
+                    Resume
+                  </a>
                 </li>
               </ul>
             </div>
@@ -167,6 +175,9 @@ const Navbar = () => {
                   <li>
                     <a href="#contact">Contact</a>
                   </li>
+                  <li>
+                    <a href="#contact">Resume</a>
+                  </li>
                 </ul>
 
                 <div>
@@ -210,6 +221,7 @@ const Navbar = () => {
           )}
         </nav>
       </div>
+
       <div className=" fixed -rotate-90 -right-24 bottom-0 mb-20 flex justify-center items-center gap-2 ">
         <div className="h-1 w-20 bg-[#844]"></div>
         <p>uyuoukoh@gmail.com</p>
