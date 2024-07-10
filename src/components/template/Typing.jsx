@@ -11,8 +11,19 @@ const TypingEffect = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
+  const [isDelayPassed, setIsDelayPassed] = useState(false);
 
   useEffect(() => {
+    const delayTimer = setTimeout(() => {
+      setIsDelayPassed(true);
+    }, 2000); // 5-second delay
+
+    return () => clearTimeout(delayTimer);
+  }, []);
+
+  useEffect(() => {
+    if (!isDelayPassed) return;
+
     const handleTyping = () => {
       const current = loopNum % words.length;
       const fullText = words[current];
@@ -36,7 +47,7 @@ const TypingEffect = () => {
     const timer = setTimeout(handleTyping, typingSpeed);
 
     return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed]);
+  }, [text, isDeleting, loopNum, typingSpeed, isDelayPassed]);
 
   return (
     <div className="typing-container">

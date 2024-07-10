@@ -11,8 +11,29 @@ import express from "../assets/express.svg";
 import mongo from "../assets/mongodb.svg";
 import tailwind from "../assets/tailwind.svg";
 import Tilt from "react-parallax-tilt";
+import { motion, useInView } from "framer-motion";
 
 const MyStacks = () => {
+  const frontendIcons = [
+    { src: html, label: "HTML" },
+    { src: css, label: "CSS" },
+    { src: tailwind, label: "TAILWIND" },
+    { src: js, label: "JS" },
+    { src: sass, label: "SASS" },
+    { src: react, label: "REACT" },
+  ];
+
+  const backendIcons = [
+    { src: node, label: "NODE" },
+    { src: express, label: "EXPRESS" },
+    { src: mongo, label: "MONGO" },
+  ];
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1, // Adjust this value as needed
+  });
+
   return (
     <div className="flex flex-wrap justify-center gap-4 mx-auto my-0 max-w-[90%] p-3 rounded-3xl">
       <Tilt
@@ -35,60 +56,26 @@ const MyStacks = () => {
           craft seamless user experiences that are both visually appealing and
           highly functional.
         </p>
+
         <div className=" flex justify-around">
-          <div className="flex flex-col items-center w-8 sm:w-10 ">
-            <img
-              style={{ width: "100%" }}
-              src={html}
-              alt=""
-            />
-            <p className="sm:text-sm text-xs font-semibold">HTML</p>
-          </div>
-
-          <div className="flex flex-col items-center w-8 sm:w-10">
-            <img
-              style={{ width: "100%" }}
-              src={css}
-              alt=""
-            />
-            <p className="sm:text-sm text-xs font-semibold">CSS</p>
-          </div>
-
-          <div className="flex flex-col items-center w-8 sm:w-10">
-            <img
-              style={{ width: "100%" }}
-              src={tailwind}
-              alt=""
-            />
-            <p className=" sm:text-sm text-xs font-semibold">TAILWIND</p>
-          </div>
-
-          <div className="flex flex-col items-center w-8 sm:w-10">
-            <img
-              style={{ width: "1000%" }}
-              src={js}
-              alt=""
-            />
-            <p className="sm:text-sm text-xs font-semibold">JS</p>
-          </div>
-
-          <div className="flex flex-col items-center w-8 sm:w-10">
-            <img
-              style={{ width: "100%" }}
-              src={sass}
-              alt=""
-            />
-            <p className="sm:text-sm text-xs font-semibold">SASS</p>
-          </div>
-
-          <div className="flex flex-col items-center w-8 sm:w-10">
-            <img
-              style={{ width: "100%" }}
-              src={react}
-              alt=""
-            />
-            <p className="sm:text-sm text-xs font-semibold">REACT</p>
-          </div>
+          {frontendIcons.map((frontendIcon, index) => (
+            <motion.div
+              key={index}
+              className="flex flex-col items-center w-8 sm:w-10"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: index * 0.3, duration: 0.4 }}
+            >
+              <img
+                style={{ width: "100%" }}
+                src={frontendIcon.src}
+                alt={frontendIcon.label}
+              />
+              <p className="sm:text-sm text-xs font-semibold">
+                {frontendIcon.label}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </Tilt>
 
@@ -112,33 +99,26 @@ const MyStacks = () => {
           I deliver seamless, end-to-end solutions that are and highly
           functional, scalable and efficient
         </p>
-        <div className="flex justify-around">
-          <div className="flex flex-col items-center w-10">
-            <img
-              style={{ width: "100%" }}
-              src={node}
-              alt=""
-            />
-            <p className="text-sm font-semibold">NODE</p>
-          </div>
 
-          <div className="flex flex-col items-center w-10">
-            <img
-              style={{ width: "100%" }}
-              src={express}
-              alt=""
-            />
-            <p className="text-sm font-semibold">EXPRESS</p>
-          </div>
-
-          <div className="flex flex-col items-center w-10">
-            <img
-              style={{ width: "100%" }}
-              src={mongo}
-              alt=""
-            />
-            <p className="text-sm font-semibold">MONGODB</p>
-          </div>
+        <div className=" flex justify-around">
+          {backendIcons.map((backendIcon, index) => (
+            <motion.div
+              key={index}
+              className="flex flex-col items-center w-10"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: index * 0.3, duration: 0.4 }}
+            >
+              <img
+                style={{ width: "100%" }}
+                src={backendIcon.src}
+                alt={backendIcon.label}
+              />
+              <p className="sm:text-sm text-xs font-semibold">
+                {backendIcon.label}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </Tilt>
     </div>
