@@ -43,24 +43,25 @@ const Grid = () => {
   const x1 = useTransform(scrollYProgress1, [0, 0.5, 1], [200, 0, -200]);
 
   const opacity2 = useTransform(scrollYProgress2, [0, 0.5, 1], [0, 1, 1]);
-  const x2 = useTransform(scrollYProgress2, [0, 0.5, 1], [200, 0, -200]);
+  const x2 = useTransform(scrollYProgress2, [0, 0.5, 1], [-200, 0, 200]);
 
   const opacity3 = useTransform(scrollYProgress3, [0, 0.5, 1], [0, 1, 1]);
-  const x3 = useTransform(scrollYProgress3, [0, 0.5, 1], [-200, 0, 200]);
+  const x3 = useTransform(scrollYProgress3, [0, 0.5, 1], [200, 0, -200]);
 
   const opacity4 = useTransform(scrollYProgress4, [0, 0.5, 1], [0, 1, 1]);
-  const x4 = useTransform(scrollYProgress4, [0, 0.5, 1], [200, 0, -200]);
+  const x4 = useTransform(scrollYProgress4, [0, 0.5, 1], [-200, 0, 200]);
 
   const opacity5 = useTransform(scrollYProgress5, [0, 0.5, 1], [0, 1, 1]);
-  const x5 = useTransform(scrollYProgress5, [0, 0.5, 1], [-200, 0, 200]);
+  const x5 = useTransform(scrollYProgress5, [0, 0.5, 1], [200, 0, -200]);
 
-  const opacity6 = useTransform(scrollYProgress6, [0, 0.5, 1], [0, 1, 1]);
-  const x6 = useTransform(scrollYProgress6, [0, 0.5, 1], [200, 0, -200]);
+  const scale = useTransform(scrollYProgress6, [0, 0.5, 1], [0, 1, 1]);
 
   return (
     <main>
       {/* FIRST */}
-      <a
+      <motion.a
+        ref={targetRef1}
+        style={{ opacity: opacity1, x: x1 }}
         target="_blank"
         href="https://moviehq.vercel.app"
         className="section-one my-4 projects pt-10"
@@ -100,7 +101,7 @@ const Grid = () => {
           />
           Your browser does not support the video tag.
         </video>
-      </a>
+      </motion.a>
 
       {/* SECOND */}
       <motion.a
@@ -284,7 +285,7 @@ const Grid = () => {
       {/* SIXTH */}
       <motion.a
         ref={targetRef6}
-        style={{ opacity: opacity6, x: x6 }}
+        style={{ scale: scale }}
         target="_blank"
         href="https://punch-assignment-beige.vercel.app/"
         className="section-two my-4 projects pt-10"
