@@ -1,6 +1,5 @@
-import React from "react";
-import { FaCode } from "react-icons/fa";
-import { FaDatabase } from "react-icons/fa";
+import React, { useRef } from "react";
+import { FaCode, FaDatabase } from "react-icons/fa";
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
 import js from "../assets/js.svg";
@@ -11,7 +10,7 @@ import express from "../assets/express.svg";
 import mongo from "../assets/mongodb.svg";
 import tailwind from "../assets/tailwind.svg";
 import Tilt from "react-parallax-tilt";
-import { motion, useInView } from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 const MyStacks = () => {
   const frontendIcons = [
@@ -29,10 +28,15 @@ const MyStacks = () => {
     { src: mongo, label: "MONGO" },
   ];
 
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1, // Adjust this value as needed
+  const targetRef = useRef();
+
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start end", "end start"],
   });
+
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
+  const y = useTransform(scrollYProgress, [0, 0.5, 1], [20, 0, -20]);
 
   return (
     <div className="flex flex-wrap justify-center gap-4 mx-auto my-0 max-w-[90%] p-3 rounded-3xl">
@@ -52,19 +56,18 @@ const MyStacks = () => {
         <p className="my-2 text-xl leading-6 ml-3 ">
           I am a passionate frontend developer with a keen eye for design and
           user experience. I create responsive and interactive web applications.
-          With experience in React , I build dynamic and efficient websites. I
+          With experience in React, I build dynamic and efficient websites. I
           craft seamless user experiences that are both visually appealing and
           highly functional.
         </p>
 
-        <div className=" flex justify-around">
+        <div className="flex justify-around">
           {frontendIcons.map((frontendIcon, index) => (
             <motion.div
+              style={{ opacity, y }}
+              ref={targetRef}
               key={index}
               className="flex flex-col items-center w-8 sm:w-10"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: index * 0.3, duration: 0.4 }}
             >
               <img
                 style={{ width: "100%" }}
@@ -96,18 +99,17 @@ const MyStacks = () => {
           I am a versatile developer skilled in both frontend and backend
           development. On the backend, I work with Node.js, Express, and
           databases such as MongoDB to build scalable server-side applications.
-          I deliver seamless, end-to-end solutions that are and highly
-          functional, scalable and efficient
+          I deliver seamless, end-to-end solutions that are highly functional,
+          scalable, and efficient.
         </p>
 
-        <div className=" flex justify-around">
+        <div className="flex justify-around">
           {backendIcons.map((backendIcon, index) => (
             <motion.div
+              style={{ opacity, y }}
+              ref={targetRef}
               key={index}
-              className="flex flex-col items-center w-10"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: index * 0.3, duration: 0.4 }}
+              className="flex flex-col items-center w-8 sm:w-10"
             >
               <img
                 style={{ width: "100%" }}
