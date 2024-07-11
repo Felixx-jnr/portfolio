@@ -57,7 +57,7 @@ const Grid = () => {
   const scale = useTransform(scrollYProgress6, [0, 0.5, 1], [0.9, 1, 1]);
 
   return (
-    <main className="">
+    <main className=" overflow-hidden">
       {/* FIRST */}
       <motion.a
         ref={targetRef1}
