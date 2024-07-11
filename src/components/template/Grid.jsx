@@ -46,13 +46,13 @@ const Grid = () => {
   const x2 = useTransform(scrollYProgress2, [0, 0.5, 1], [200, 0, -200]);
 
   const opacity3 = useTransform(scrollYProgress3, [0, 0.5, 1], [0, 1, 1]);
-  const x3 = useTransform(scrollYProgress3, [0, 0.5, 1], [200, 0, -200]);
+  const x3 = useTransform(scrollYProgress3, [0, 0.5, 1], [-200, 0, 200]);
 
   const opacity4 = useTransform(scrollYProgress4, [0, 0.5, 1], [0, 1, 1]);
   const x4 = useTransform(scrollYProgress4, [0, 0.5, 1], [200, 0, -200]);
 
   const opacity5 = useTransform(scrollYProgress5, [0, 0.5, 1], [0, 1, 1]);
-  const x5 = useTransform(scrollYProgress5, [0, 0.5, 1], [200, 0, -200]);
+  const x5 = useTransform(scrollYProgress5, [0, 0.5, 1], [-200, 0, 200]);
 
   const opacity6 = useTransform(scrollYProgress6, [0, 0.5, 1], [0, 1, 1]);
   const x6 = useTransform(scrollYProgress6, [0, 0.5, 1], [200, 0, -200]);
@@ -148,7 +148,9 @@ const Grid = () => {
       </motion.a>
 
       {/* THIRD */}
-      <a
+      <motion.a
+        ref={targetRef3}
+        style={{ opacity: opacity3, x: x3 }}
         target="_blank"
         href="https://felix-gym.onrender.com"
         className="section-one my-4 projects pt-10"
@@ -188,7 +190,7 @@ const Grid = () => {
           />
           Your browser does not support the video tag.
         </video>
-      </a>
+      </motion.a>
 
       {/* FOURTH */}
       <motion.a
@@ -236,7 +238,9 @@ const Grid = () => {
       </motion.a>
 
       {/* FIFTH */}
-      <a
+      <motion.a
+        ref={targetRef5}
+        style={{ opacity: opacity5, x: x5 }}
         target="_blank"
         href="https://felixsocials.pages.dev"
         className="section-one my-4 projects pt-10"
@@ -275,7 +279,7 @@ const Grid = () => {
           />
           Your browser does not support the video tag.
         </video>
-      </a>
+      </motion.a>
 
       {/* SIXTH */}
       <motion.a
