@@ -54,7 +54,7 @@ const Grid = () => {
   const opacity5 = useTransform(scrollYProgress5, [0, 0.5, 1], [0, 1, 1]);
   const x5 = useTransform(scrollYProgress5, [0, 0.5, 1], [200, 0, -200]);
 
-  const scale = useTransform(scrollYProgress6, [0, 0.5, 1], [0, 1, 1]);
+  const scale = useTransform(scrollYProgress6, [0, 0.5, 1], [0.9, 1, 1]);
 
   return (
     <main className="">
