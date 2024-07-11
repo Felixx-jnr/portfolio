@@ -2,7 +2,10 @@ import React from "react";
 
 const Grid = () => {
   return (
-    <main className="">
+    <main
+      className=""
+      className="overflow-hidden"
+    >
       {/* FIRST */}
       <a
         target="_blank"
