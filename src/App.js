@@ -17,8 +17,6 @@ const App = () => {
       <MyStacks />
       <Projects />
       <Contact />
-
-      {/* <Footer /> */}
     </>
   );
 };
