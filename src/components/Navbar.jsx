@@ -176,7 +176,12 @@ const Navbar = () => {
                     <a href="#contact">Contact</a>
                   </li>
                   <li>
-                    <a href="#contact">Resume</a>
+                    <a
+                      target="_blank"
+                      href="https://drive.google.com/file/d/18WJuXwGb8agrcUUNyXKaLHOTDVeYhKL9/view?usp=drive_link"
+                    >
+                      Resume
+                    </a>
                   </li>
                 </ul>
 
