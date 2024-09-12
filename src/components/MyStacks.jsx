@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCode, FaDatabase } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa";
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
 import js from "../assets/js.svg";
@@ -42,8 +42,8 @@ const MyStacks = () => {
         className=" bg-pink-100/30 p-1 rounded-xl w-[100%]"
       >
         <div className="flex items-center gap-2 mt-3 ml-3 ">
-          <FaCode className=" text-2xl text-[#771b48]" />
-          <h3 className=" text-xl font-semibold text-[#771b48]">Frontend</h3>
+          <FaDatabase className=" text-2xl text-[#771b48]" />
+          <h3 className=" text-2xl font-semibold text-[#771b48]">MY STACKS</h3>
         </div>
         <p className="my-2 text-xl leading-6 ml-3 ">
           "I am a passionate web developer with a keen eye for design, user
