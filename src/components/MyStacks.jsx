@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { FaCode, FaDatabase } from "react-icons/fa";
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
@@ -9,8 +9,10 @@ import node from "../assets/node.svg";
 import express from "../assets/express.svg";
 import mongo from "../assets/mongodb.svg";
 import tailwind from "../assets/tailwind.svg";
+import angular from "../assets/angular.svg";
+import typescript from "../assets/typescript.svg";
+import next from "../assets/next.svg";
 import Tilt from "react-parallax-tilt";
-import { useScroll, useTransform, motion } from "framer-motion";
 
 const MyStacks = () => {
   const frontendIcons = [
@@ -20,23 +22,13 @@ const MyStacks = () => {
     { src: js, label: "JS" },
     { src: sass, label: "SASS" },
     { src: react, label: "REACT" },
-  ];
-
-  const backendIcons = [
+    { src: next, label: "NEXT" },
+    { src: typescript, label: "TS" },
+    { src: angular, label: "ANGULAR" },
     { src: node, label: "NODE" },
     { src: express, label: "EXPRESS" },
     { src: mongo, label: "MONGO" },
   ];
-
-  const targetRef = useRef();
-
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["start end", "end start"],
-  });
-
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
-  const y = useTransform(scrollYProgress, [0, 0.5, 1], [20, 0, -20]);
 
   return (
     <div className="flex flex-wrap justify-center gap-4 mx-auto my-0 max-w-[90%] p-3 rounded-3xl">
@@ -47,27 +39,26 @@ const MyStacks = () => {
         glarePosition="all"
         tiltMaxAngleX={10}
         tiltMaxAngleY={10}
-        className=" bg-pink-100/30 p-1 rounded-xl md:w-[47%] w-[100%]"
+        className=" bg-pink-100/30 p-1 rounded-xl w-[100%]"
       >
         <div className="flex items-center gap-2 mt-3 ml-3 ">
           <FaCode className=" text-2xl text-[#771b48]" />
           <h3 className=" text-xl font-semibold text-[#771b48]">Frontend</h3>
         </div>
         <p className="my-2 text-xl leading-6 ml-3 ">
-          I am a passionate frontend developer with a keen eye for design and
-          user experience. I create responsive and interactive web applications.
-          With experience in React, I build dynamic and efficient websites. I
-          craft seamless user experiences that are both visually appealing and
-          highly functional.
+          "I am a passionate web developer with a keen eye for design, user
+          experience, and logical operation. I engineer and build responsive,
+          interactive web applications. With experience in both backend and
+          frontend, I build dynamic and efficient web applications, crafting
+          seamless user experiences that are both visually appealing and highly
+          functional."
         </p>
 
-        <div className="flex justify-around">
+        <div className="flex justify-around flex-wrap">
           {frontendIcons.map((frontendIcon, index) => (
-            <motion.div
-              style={{ opacity, y }}
-              ref={targetRef}
+            <div
               key={index}
-              className="flex flex-col items-center w-8 sm:w-10"
+              className="flex flex-col flex-wrap items-center w-10 mx-4 mb-4"
             >
               <img
                 style={{ width: "100%" }}
@@ -77,49 +68,7 @@ const MyStacks = () => {
               <p className="sm:text-sm text-xs font-semibold">
                 {frontendIcon.label}
               </p>
-            </motion.div>
-          ))}
-        </div>
-      </Tilt>
-
-      <Tilt
-        glareEnable={true}
-        glareMaxOpacity={0.3}
-        glareColor="#ffffff"
-        glarePosition="all"
-        tiltMaxAngleX={10}
-        tiltMaxAngleY={10}
-        className=" bg-pink-100/30 p-2 rounded-xl md:w-[47%] w-[100%]"
-      >
-        <div className="flex items-center gap-2 mt-3 ml-3  ">
-          <FaDatabase className=" text-2xl text-[#771b48]" />
-          <h3 className=" text-xl font-semibold text-[#771b48]">Backend</h3>
-        </div>
-        <p className="my-2 text-xl leading-6 ml-3">
-          I am a versatile developer skilled in both frontend and backend
-          development. On the backend, I work with Node.js, Express, and
-          databases such as MongoDB to build scalable server-side applications.
-          I deliver seamless, end-to-end solutions that are highly functional,
-          scalable, and efficient.
-        </p>
-
-        <div className="flex justify-around">
-          {backendIcons.map((backendIcon, index) => (
-            <motion.div
-              style={{ opacity, y }}
-              ref={targetRef}
-              key={index}
-              className="flex flex-col items-center w-8 sm:w-10"
-            >
-              <img
-                style={{ width: "100%" }}
-                src={backendIcon.src}
-                alt={backendIcon.label}
-              />
-              <p className="sm:text-sm text-xs font-semibold">
-                {backendIcon.label}
-              </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </Tilt>

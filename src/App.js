@@ -4,7 +4,6 @@ import Home from "./components/Home";
 import MyStacks from "./components/MyStacks";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import { motion } from "framer-motion";
 
 const App = () => {
   return (
