@@ -9,6 +9,9 @@ const Grid = () => {
   const targetRef5 = React.useRef();
   const targetRef6 = React.useRef();
 
+  // Check if it's a mobile screen
+  const isMobile = window.innerWidth <= 768;
+
   const { scrollYProgress: scrollYProgress1 } = useScroll({
     target: targetRef1,
     offset: ["start end", "end start"],
@@ -56,12 +59,14 @@ const Grid = () => {
 
   const scale = useTransform(scrollYProgress6, [0, 0.5, 1], [0.7, 1, 1]);
 
+  const mobileStyle = { opacity: 1, x: 0, scale: 1 };
+
   return (
     <main className=" overflow-hidden">
       {/* FIRST */}
       <motion.a
         ref={targetRef1}
-        style={{ opacity: opacity1, x: x1 }}
+        style={!isMobile ? { opacity: opacity1, x: x1 } : mobileStyle}
         target="_blank"
         href="https://moviehq.vercel.app"
         className="section-one my-4 projects pt-10"
@@ -106,7 +111,7 @@ const Grid = () => {
       {/* SECOND */}
       <motion.a
         ref={targetRef2}
-        style={{ opacity: opacity2, x: x2 }}
+        style={!isMobile ? { opacity: opacity2, x: x2 } : mobileStyle}
         target="_blank"
         href="https://gen-ecommerce.onrender.com/"
         className="section-two my-4 projects pt-10"
@@ -151,7 +156,7 @@ const Grid = () => {
       {/* THIRD */}
       <motion.a
         ref={targetRef3}
-        style={{ opacity: opacity3, x: x3 }}
+        style={!isMobile ? { opacity: opacity3, x: x3 } : mobileStyle}
         target="_blank"
         href="https://felix-gym.onrender.com"
         className="section-one my-4 projects pt-10"
@@ -196,7 +201,7 @@ const Grid = () => {
       {/* FOURTH */}
       <motion.a
         ref={targetRef4}
-        style={{ opacity: opacity4, x: x4 }}
+        style={!isMobile ? { opacity: opacity4, x: x4 } : mobileStyle}
         target="_blank"
         href="https://charity-master.onrender.com/"
         className="section-two my-4 projects pt-10"
@@ -241,7 +246,7 @@ const Grid = () => {
       {/* FIFTH */}
       <motion.a
         ref={targetRef5}
-        style={{ opacity: opacity5, x: x5 }}
+        style={!isMobile ? { opacity: opacity5, x: x5 } : mobileStyle}
         target="_blank"
         href="https://felixsocials.pages.dev"
         className="section-one my-4 projects pt-10"
@@ -285,7 +290,7 @@ const Grid = () => {
       {/* SIXTH */}
       <motion.a
         ref={targetRef6}
-        style={{ scale: scale }}
+        style={!isMobile ? { scale } : mobileStyle}
         target="_blank"
         href="https://punch-assignment-beige.vercel.app/"
         className="section-two my-4 projects pt-10"
