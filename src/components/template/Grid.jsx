@@ -62,27 +62,122 @@ const Grid = () => {
   const mobileStyle = { opacity: 1, x: 0, scale: 1 };
 
   return (
-    <main className=" overflow-hidden">
-      {/* FIRST */}
+    <main className="overflow-hidden">
+      {/* FIRST - ECOMMERCERCE */}
       <motion.a
         ref={targetRef1}
         style={!isMobile ? { opacity: opacity1, x: x1 } : mobileStyle}
         target="_blank"
-        href="https://moviehq.vercel.app"
-        className="section-one my-4 projects pt-10"
+        href="https://fil-store.vercel.app/"
+        className="my-4 pt-10 section-one projects"
       >
         <div className="relative writeup">
-          <div className="absolute -top-7 max-md:-top-8 left-0 px-2 font-bold lg:text-xl">
-            <h3 className="text-[#771b48]">MOVIES HQ</h3>
-            <p className="text-xs font-medium">REACT REDUX NODE TAILWIND</p>
+          <div className="-top-7 max-md:-top-8 left-0 absolute px-2 font-bold lg:text-xl">
+            <h3 className="text-[#771b48]">FIL E-COMMERCE</h3>
+            <p className="font-medium text-xs">NEXT EXPRESS REDUX TAILWIND</p>
           </div>
 
           <div className="one">
-            <h1 className="lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
+            <h1 className="font-bold text-[#771b48] text-6xl md:text-7xl lg:text-8xl leading-none">
               01
             </h1>
 
-            <p className="pt-4 font-semibold text-left p-2 lg:text-sm text-xs">
+            <p className="p-2 pt-4 font-semibold text-xs lg:text-sm text-left">
+              Developed a fully functional e-commerce application with user and
+              admin features. Users can create accounts, log in, browse
+              products, and make purchases. The platform includes admin
+              functionality for product and order management.
+              <p className="font-bold text-red-500 text-xs lg:text-sm text-left">
+                NOTE: This project is still a work in progress and a lot of
+                changes are yet to be made especially to the stylings.
+              </p>
+            </p>
+          </div>
+        </div>
+
+        <video
+          width="100%"
+          height="100%"
+          autoPlay
+          playsInline
+          loop
+          muted
+          className="project-video"
+        >
+          <source
+            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1756289893/iiz3q03isey2sc3xbg2r.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </motion.a>
+
+      {/* SECOND - CHC */}
+      <motion.a
+        ref={targetRef2}
+        style={!isMobile ? { opacity: opacity2, x: x2 } : mobileStyle}
+        target="_blank"
+        href="https://calvaryhillglobalchurch.org/"
+        className="my-4 pt-10 section-two projects"
+      >
+        <video
+          width="100%"
+          height="100%"
+          autoPlay
+          loop
+          playsInline
+          muted
+          className="project-video"
+        >
+          <source
+            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1756289888/jrmg0itfgykjdc7dznsh.mp4
+"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="relative writeup">
+          <div className="-top-7 max-md:-top-8 right-0 absolute bg-background px-3 font-bold lg:text-xl text-right">
+            <h3 className="text-[#771b48]">CALVARY HILL CHURCH</h3>
+            <p className="font-medium text-xs">NEXT NODE S3(STORAGE)</p>
+          </div>
+
+          <div className="two">
+            <p className="p-2 pt-4 font-semibold text-xs lg:text-sm text-right">
+              Built a fully responsive website for a church featuring a custom
+              audio player, gallery section, and sermon playing and downloads.
+              Integrated Amazon S3 for sermon storage and streaming. The site
+              provides a seamless user experience across devices.
+            </p>
+
+            <h1 className="font-bold text-[#771b48] text-6xl md:text-7xl lg:text-8xl leading-none">
+              02
+            </h1>
+          </div>
+        </div>
+      </motion.a>
+
+      {/* THIRD - MOVIE */}
+      <motion.a
+        ref={targetRef3}
+        style={!isMobile ? { opacity: opacity3, x: x3 } : mobileStyle}
+        target="_blank"
+        href="https://moviehq.vercel.app/"
+        className="my-4 pt-10 section-one projects"
+      >
+        <div className="relative writeup">
+          <div className="-top-7 max-md:-top-8 left-0 absolute bg-background px-2 font-bold lg:text-xl">
+            <h3 className="text-[#771b48]">MOVIES HQ</h3>
+            <p className="font-medium text-xs">REACT REDUX NODE TAILWIND</p>
+          </div>
+
+          <div className="one">
+            <h1 className="font-bold text-[#771b48] text-6xl md:text-7xl lg:text-8xl leading-none">
+              03
+            </h1>
+
+            <p className="p-2 pt-4 font-semibold text-xs lg:text-sm text-left">
               Developed a movie app using the MERN stack (MongoDB, Express,
               React, Node.js) which has the CRUD system. The app allows admin
               users to create, read, update, and delete movie entries
@@ -97,6 +192,7 @@ const Grid = () => {
           height="100%"
           autoPlay
           loop
+          playsInline
           muted
           className="project-video"
         >
@@ -108,108 +204,112 @@ const Grid = () => {
         </video>
       </motion.a>
 
-      {/* SECOND */}
-      <motion.a
-        ref={targetRef2}
-        style={!isMobile ? { opacity: opacity2, x: x2 } : mobileStyle}
-        target="_blank"
-        href="https://gen-ecommerce.onrender.com/"
-        className="section-two my-4 projects pt-10"
-      >
-        <video
-          width="100%"
-          height="100%"
-          autoPlay
-          loop
-          muted
-          className="project-video"
-        >
-          <source
-            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238251/qk5rdvevvjz7bw4ty92a.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-
-        <div className="relative writeup">
-          <div className="absolute -top-7 max-md:-top-8 right-0 bg-background px-3 font-bold lg:text-xl text-right">
-            <h3 className="text-[#771b48]">GEN E-COMMERCE</h3>
-            <p className="text-xs font-medium">HTML CSS JS</p>
-          </div>
-
-          <div className="two">
-            <p className="pt-4 font-semibold text-right p-2 lg:text-sm text-xs">
-              Developed the frontend of an e-commerce store using HTML, CSS, and
-              JavaScript. It has a user-friendly interface and responsive
-              design. JavaScript powers interactive elements while HTML and CSS
-              ensure a clean and appealing layout. This project showcases my
-              ability to create a visually appealing e-commerce experience.
-            </p>
-
-            <h1 className="lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
-              02
-            </h1>
-          </div>
-        </div>
-      </motion.a>
-
-      {/* THIRD */}
-      <motion.a
-        ref={targetRef3}
-        style={!isMobile ? { opacity: opacity3, x: x3 } : mobileStyle}
-        target="_blank"
-        href="https://felix-gym.onrender.com"
-        className="section-one my-4 projects pt-10"
-      >
-        <div className="relative writeup">
-          <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
-            <h3 className="text-[#771b48]">THE FIT CLUB</h3>
-            <p className="text-xs font-medium">REACT CSS</p>
-          </div>
-
-          <div className="one">
-            <h1 className="lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
-              03
-            </h1>
-
-            <p className="pt-4 font-semibold text-left p-2 lg:text-sm text-xs">
-              I designed and developed a landing page for a gym using REACT and
-              CSS. The landing page features a responsive design that highlights
-              the gym's services, facilities, and membership plans. It has
-              interactive elements enhance user experience, with a clean and
-              intuitive layout.
-            </p>
-          </div>
-        </div>
-
-        <video
-          width="100%"
-          height="100%"
-          autoPlay
-          loop
-          muted
-          className="project-video"
-        >
-          <source
-            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238081/fgys9znryfbsfn51czh3.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </motion.a>
-
-      {/* FOURTH */}
+      {/* FOURTH - JOHNNIE */}
       <motion.a
         ref={targetRef4}
         style={!isMobile ? { opacity: opacity4, x: x4 } : mobileStyle}
         target="_blank"
-        href="https://charity-master.onrender.com/"
-        className="section-two my-4 projects pt-10"
+        href="https://scroll-anime.vercel.app/"
+        className="my-4 pt-10 section-two projects"
       >
         <video
           width="100%"
           height="100%"
           autoPlay
+          loop
+          playsInline
+          muted
+          className="project-video"
+        >
+          <source
+            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1756289909/qnep0ubcjufdtzffjwug.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="relative writeup">
+          <div className="-top-7 max-md:-top-8 right-0 absolute bg-background px-3 font-bold lg:text-xl text-right">
+            <h3 className="text-[#771b48]">JOHNNIE WALKER</h3>
+            <p className="font-medium text-xs">REACT FRAMER-MOTION</p>
+          </div>
+
+          <div className="two">
+            <p className="p-2 pt-4 font-semibold text-xs lg:text-sm text-right">
+              Created a visually engaging landing page for a beverage brand to
+              practice advanced web animations. Focused on delivering a smooth
+              user experience with animated elements and video backgrounds.
+              <p className="font-bold text-red-500 text-xs lg:text-sm text-right">
+                NOTE: Site is not fully optimized; asset loading may take some
+                time.
+              </p>
+            </p>
+
+            <h1 className="font-bold text-[#771b48] text-6xl md:text-7xl lg:text-8xl leading-none">
+              04
+            </h1>
+          </div>
+        </div>
+      </motion.a>
+
+      {/* FIFTH - ADMIN */}
+      <motion.a
+        ref={targetRef5}
+        style={!isMobile ? { opacity: opacity5, x: x5 } : mobileStyle}
+        target="_blank"
+        href="https://ss-admin-dashboard.vercel.app/"
+        className="my-4 pt-10 section-one projects"
+      >
+        <div className="relative writeup">
+          <div className="-top-7 max-md:-top-8 left-0 absolute bg-background px-2 font-bold lg:text-xl">
+            <h3 className="text-[#771b48]">CHUCKY ADMIN DASHBOARD</h3>
+            <p className="font-medium text-xs"> REACT CHARTJS LEAFLETJS</p>
+          </div>
+
+          <div className="one">
+            <h1 className="font-bold text-[#771b48] text-6xl md:text-7xl lg:text-8xl leading-none">
+              05
+            </h1>
+
+            <p className="p-2 pt-4 font-semibold text-xs lg:text-sm text-left">
+              Designed and developed a responsive admin dashboard frontend with
+              static data visualization. Implemented interactive charts using
+              Chart.js and integrated Leaflet.js for dynamic map features with
+              custom pins.
+            </p>
+          </div>
+        </div>
+
+        <video
+          width="100%"
+          height="100%"
+          autoPlay
+          loop
+          playsInline
+          muted
+          className="project-video"
+        >
+          <source
+            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1756289903/t9em8blab2mohm19ds4u.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </motion.a>
+
+      {/* SIXTH - CHARITY */}
+      <motion.a
+        ref={targetRef6}
+        style={!isMobile ? { scale } : mobileStyle}
+        target="_blank"
+        href="https://charity-master.onrender.com/"
+        className="my-4 pt-10 section-two projects"
+      >
+        <video
+          width="100%"
+          height="100%"
+          autoPlay
+          playsInline
           loop
           muted
           className="project-video"
@@ -222,13 +322,13 @@ const Grid = () => {
         </video>
 
         <div className="relative writeup">
-          <div className="absolute -top-7 max-md:-top-8 right-0 bg-background px-3 font-bold lg:text-xl text-right">
+          <div className="-top-7 max-md:-top-8 right-0 absolute bg-background px-3 font-bold lg:text-xl text-right">
             <h3 className="text-[#771b48]">CHARITY</h3>
-            <p className="text-xs font-medium">HTML CSS JS</p>
+            <p className="font-medium text-xs">HTML CSS JS</p>
           </div>
 
           <div className="two">
-            <p className="pt-4 font-semibold text-right p-2 lg:text-sm text-xs">
+            <p className="p-2 pt-4 font-semibold text-xs lg:text-sm text-right">
               Designed and developed a landing page for a nature charity
               organization using HTML, CSS, and JavaScript. The landing page
               features a clean, responsive design that showcases the
@@ -236,96 +336,7 @@ const Grid = () => {
               animations, and interactive elements.
             </p>
 
-            <h1 className="lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
-              04
-            </h1>
-          </div>
-        </div>
-      </motion.a>
-
-      {/* FIFTH */}
-      <motion.a
-        ref={targetRef5}
-        style={!isMobile ? { opacity: opacity5, x: x5 } : mobileStyle}
-        target="_blank"
-        href="https://felixsocials.pages.dev"
-        className="section-one my-4 projects pt-10"
-      >
-        <div className="relative writeup">
-          <div className="absolute -top-7 max-md:-top-8 left-0 bg-background px-2 font-bold lg:text-xl">
-            <h3 className="text-[#771b48]">SOCIAL MEDIA DASHBOARD</h3>
-            <p className="text-xs font-medium">HTML SCSS JS</p>
-          </div>
-
-          <div className="one">
-            <h1 className="lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
-              05
-            </h1>
-
-            <p className="pt-4 font-semibold text-left p-2 lg:text-sm text-xs">
-              Built a social media engagement page with a light and dark mode
-              toggle. This work was inspired by the design from frontend mentor,
-              although I added a bit of my styling with the front card cover and
-              the flip effect on hover. This is a single-page site, This project
-            </p>
-          </div>
-        </div>
-
-        <video
-          width="100%"
-          height="100%"
-          autoPlay
-          loop
-          muted
-          className="project-video"
-        >
-          <source
-            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1713026912/afcadc0qr4ac3xjmyc7c.webm"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </motion.a>
-
-      {/* SIXTH */}
-      <motion.a
-        ref={targetRef6}
-        style={!isMobile ? { scale } : mobileStyle}
-        target="_blank"
-        href="https://punch-assignment-beige.vercel.app/"
-        className="section-two my-4 projects pt-10"
-      >
-        <video
-          width="100%"
-          height="100%"
-          autoPlay
-          loop
-          muted
-          className="project-video"
-        >
-          <source
-            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1719238044/woubungbvzhp9vhuohfx.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-
-        <div className="relative writeup">
-          <div className="absolute -top-7 max-md:-top-8 right-0 bg-background px-3 font-bold lg:text-xl text-right">
-            <h3 className="text-[#771b48]">ZWILT LANDING PAGE</h3>
-            <p className="text-xs font-medium">REACT SCSS TAILWIND</p>
-          </div>
-
-          <div className="two">
-            <p className="pt-4 font-semibold text-right p-2 lg:text-sm text-xs">
-              Designed and developed a landing page for an interview platform
-              using REACT, TAILWIND and SCSS The landing page features a sleek,
-              and responsive design with Interactive elements and engaging
-              visuals. It provides an intuitive user experience, while clear and
-              intuitive layout.
-            </p>
-
-            <h1 className="lg:text-8xl md:text-7xl text-6xl leading-none font-bold text-[#771b48]">
+            <h1 className="font-bold text-[#771b48] text-6xl md:text-7xl lg:text-8xl leading-none">
               06
             </h1>
           </div>

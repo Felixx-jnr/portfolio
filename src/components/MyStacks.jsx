@@ -9,7 +9,6 @@ import node from "../assets/node.svg";
 import express from "../assets/express.svg";
 import mongo from "../assets/mongodb.svg";
 import tailwind from "../assets/tailwind.svg";
-import angular from "../assets/angular.svg";
 import typescript from "../assets/typescript.svg";
 import next from "../assets/next.svg";
 import Tilt from "react-parallax-tilt";
@@ -24,7 +23,6 @@ const MyStacks = () => {
     { src: react, label: "REACT" },
     { src: next, label: "NEXT" },
     { src: typescript, label: "TS" },
-    { src: angular, label: "ANGULAR" },
     { src: node, label: "NODE" },
     { src: express, label: "EXPRESS" },
     { src: mongo, label: "MONGO" },
