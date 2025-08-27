@@ -197,7 +197,7 @@ const Grid = () => {
           className="project-video"
         >
           <source
-            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1713026915/y5g9nahjcevsslfyvual.webm"
+            src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1756291369/lzhcxhjdloupc8anhzef.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
